@@ -3,6 +3,7 @@
 ## Schema
 
 ```
+    const product = new Schema(
   {
     imgURL: { type: String, required: true },
     name: { type: String, required: true },
