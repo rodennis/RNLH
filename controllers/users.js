@@ -4,7 +4,7 @@ import jwt from 'jsonwebtoken'
 import User from '../models/user.js'
 
 let SALT_ROUNDS = 11
-let TOKEN_KEY = 'areallylonggoodkey'
+let TOKEN_KEY = 'productssssforsaleeee'
 
 if (process.env.NODE_ENV === 'production') {
   SALT_ROUNDS = Number(process.env.SALT_ROUNDS)
