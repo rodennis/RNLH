@@ -22,6 +22,30 @@ const insertData = async () => {
       location: "Colorado",
       price: "25,000",
       description: "2016 Subaru WRX Four Door",
+    },
+    {
+      imgURL: "https://s.aolcdn.com/dims-global/dims3/GLOB/legacy_thumbnail/788x525/quality/85/https://s.aolcdn.com/commerce/autodata/images/USC70SUC181A021001.jpg",
+      name: "2016 Subaru WRX Four Door",
+      condition: "New",
+      location: "Colorado",
+      price: "25,000",
+      description: "2016 Subaru WRX Four Door",
+    },
+    {
+      imgURL: "https://s.aolcdn.com/dims-global/dims3/GLOB/legacy_thumbnail/788x525/quality/85/https://s.aolcdn.com/commerce/autodata/images/USC70SUC181A021001.jpg",
+      name: "2016 Subaru WRX Four Door",
+      condition: "New",
+      location: "Colorado",
+      price: "25,000",
+      description: "2016 Subaru WRX Four Door",
+    },
+    {
+      imgURL: "https://s.aolcdn.com/dims-global/dims3/GLOB/legacy_thumbnail/788x525/quality/85/https://s.aolcdn.com/commerce/autodata/images/USC70SUC181A021001.jpg",
+      name: "2016 Subaru WRX Four Door",
+      condition: "New",
+      location: "Colorado",
+      price: "25,000",
+      description: "2016 Subaru WRX Four Door",
       },
   ]
   
