@@ -53,8 +53,9 @@ function AddProducts(props) {
                 <input placeholder='Location' value={product.location} name='location' required onChange={handleChange} />
                 <label>Price:</label>
                 <input placeholder='Price' value={product.price} name='price' required onChange={handleChange} />
-                {/* <label>Category</label> */}
-                {/* <select placeholder='Category' value={product.category} name="category" required onChange={handleChange}>
+                {/* <label>Category</label>
+                <select placeholder='Category' value={product.category} name="category" required onChange={handleChange}>
+                  <option value="" disabled selected>Select your Category</option>
                   <option value="Electronics">Electronics</option>
                   <option value="Home Furniture">Home Furniture</option>
                   <option value="Vehicles">Vehicles</option>
