@@ -1,9 +1,12 @@
 import React from 'react'
+import ProductCards from '../../components/ProductCards/ProductCards'
 
-function Products() {
+function Products({products}) {
+
+
   return (
-    <div>
-      
+    <div className='all-products'>
+    <ProductCards products={products}/>
     </div>
   )
 }
