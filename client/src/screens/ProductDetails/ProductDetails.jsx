@@ -17,7 +17,9 @@ export default function ProductDetails(props) {
   return (
     <Layout user={props.user}>
     <div className="productDetails">
-      <p className="bigName">{ProductDetails?.name}</p>
+      { ProductDetails &&
+      <div>
+      <p className="bigName">{ProductDetails.name}</p>
       <br />
       <p className="imgURL">{ProductDetails.imgURL}</p>
       <br />
@@ -47,6 +49,7 @@ export default function ProductDetails(props) {
           <p>Hey is this available?</p>
         </div>
       </div>
+          }
       </div>
     </Layout>
   );
