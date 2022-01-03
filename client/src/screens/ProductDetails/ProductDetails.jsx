@@ -1,9 +1,24 @@
+
+import { useState, useEffect } from "react";
+import { postResp } from "../services";
+import { useNavigate, useParams } from "react-router-dom";
+
+function ProductDetails(props) {
+  const [imgURL, setImgURL] = useState("");
+  const [name, setName] = useState("");
+  const [location, setLocation] = useState("");
+  const [condition, setCondition] = useState("");
+  const [price, setPrice] = useState("");
+  const [description, setDescription] = useState("");
+  const navigate = useNavigate();
+
 import { React, useEffect, useState } from "react";
 import { useParams } from "react-router-dom";
 import "./ProductDetail.css";
 
 export default function ProductDetails(props) {
   const [ProductDetails, setProductDetails] = useState({});
+
   const params = useParams();
 
   useEffect(() => {
@@ -19,6 +34,15 @@ export default function ProductDetails(props) {
       <br />
       <p className="imgURL">{ProductDetails.imgURL}</p>
       <br />
+
+      <button>Submit :D</button>
+    </form>
+  );
+}
+
+export default ProductDetails
+
+
 
       <br />
       <p className="locationTag">Location:</p>
@@ -48,3 +72,4 @@ export default function ProductDetails(props) {
     </div>
   );
 }
+
