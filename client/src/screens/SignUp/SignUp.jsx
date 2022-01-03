@@ -1,96 +1,107 @@
-import { useState } from 'react'
-import { signUp } from '../../services/users'
-import { useNavigate } from 'react-router-dom'
-
+import { useState } from "react";
+import { signUp } from "../../services/users";
+import { useNavigate } from "react-router-dom";
+import "./SignUp.css";
 
 function SignUp(props) {
-
-  const navigate = useNavigate()
+  const navigate = useNavigate();
 
   const [form, setForm] = useState({
-    name: '',
-    email: '',
-    password: '',
+    name: "",
+    email: "",
+    password: "",
     isError: false,
-    errorMsg: '',
-  })
+    errorMsg: "",
+  });
 
   const handleChange = (e) =>
     setForm({
       ...form,
       [e.target.name]: e.target.value,
-    })
+    });
 
   const onSignUp = async (event) => {
-    event.preventDefault()
-    const { setUser } = props
+    event.preventDefault();
+    const { setUser } = props;
     try {
-      const user = await signUp(form)
-      setUser(user)
-      navigate('/')
+      const user = await signUp(form);
+      setUser(user);
+      navigate("/");
     } catch (error) {
-      console.error(error)
+      console.error(error);
       setForm({
-        name: '',
-        email: '',
-        password: '',
+        name: "",
+        email: "",
+        password: "",
         isError: true,
-        errorMsg: 'Sign Up Details Invalid',
-      })
+        errorMsg: "Sign Up Details Invalid",
+      });
     }
-  }
+  };
 
   const renderError = () => {
-    const toggleForm = form.isError ? 'danger' : ''
+    const toggleForm = form.isError ? "danger" : "";
     if (form.isError) {
       return (
-        <button type='submit' className={toggleForm}>
+        <button type="submit" className={toggleForm}>
           {form.errorMsg}
         </button>
-      )
+      );
     } else {
-      return <button type='submit'>Sign Up</button>
+      return (
+        <div>
+          <button className="signup-button" type="submit">
+            Sign Up
+          </button>
+        </div>
+      );
     }
-  }
+  };
 
-  const { name, email, password } = form
+  const { name, email, password } = form;
 
   return (
-    <div>
-      <h3>Sign Up</h3>
-      <form onSubmit={onSignUp}>
-        <label>Name</label>
-        <input
-          required
-          type='text'
-          name='name'
-          value={name}
-          placeholder='Enter Name'
-          onChange={handleChange}
-        />
-        <label>Email address</label>
-        <input
-          required
-          type='email'
-          name='email'
-          value={email}
-          placeholder='Enter email'
-          onChange={handleChange}
-        />
-        <label>Password</label>
-        <input
-          required
-          name='password'
-          value={password}
-          type='password'
-          placeholder='Password'
-          onChange={handleChange}
-        />
-        {renderError()}
-      </form>
+    <div className="signup-container">
+      <div>
+        <div className="header-signup">
+          <h3 className="signup">Sign Up</h3>
+        </div>
+        <form className="signup-form" onSubmit={onSignUp}>
+          <label className="signup-label">Name: </label>
+          <input
+            required
+            className="signup-input"
+            type="text"
+            name="name"
+            value={name}
+            placeholder="Enter Name"
+            onChange={handleChange}
+          />
+          <label className="signup-label">Email: </label>
+          <input
+            required
+            className="signup-input"
+            type="email"
+            name="email"
+            value={email}
+            placeholder="Enter email"
+            onChange={handleChange}
+          />
+          <label className="signup-label">Password: </label>
+          <input
+            required
+            className="signup-input"
+            name="password"
+            value={password}
+            type="password"
+            placeholder="Password"
+            onChange={handleChange}
+          />
+          {renderError()}
+        </form>
+      </div>
     </div>
-  
-  )
+  );
 }
 
-export default SignUp
+export default SignUp;

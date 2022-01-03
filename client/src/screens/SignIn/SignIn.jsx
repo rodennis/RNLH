@@ -63,15 +63,16 @@ function SignIn(props) {
     <div className="signin-container">
       <div>
         <div className="header-signin">
-          <h3>Sign In</h3>
+          <h3 className="signin">Sign In</h3>
         </div>
 
-        <form onSubmit={onSignIn}>
+        <form className="signin-form" onSubmit={onSignIn}>
           <div className="container">
-            <label>Email: </label>
+            <label className="signin-label">Email: </label>
             <div className="signin-email">
               <input
                 required
+                className="signin-input"
                 type="text"
                 name="email"
                 value={email}
@@ -80,10 +81,11 @@ function SignIn(props) {
               />
             </div>
 
-            <label>Password: </label>
+            <label className="signin-label">Password: </label>
             <div className="signin-pw">
               <input
                 required
+                className="signin-input"
                 name="password"
                 value={password}
                 type="password"

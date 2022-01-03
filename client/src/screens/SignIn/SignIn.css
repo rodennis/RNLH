@@ -25,7 +25,7 @@ body {
   box-shadow: 0 12px 16px 0 rgba(0, 0, 0, 0.24),
     0 17px 50px 0 rgba(0, 0, 0, 0.19);
 }
-h3 {
+.signin {
   display: flex;
   align-items: center;
   justify-content: space-evenly;
@@ -37,18 +37,20 @@ h3 {
   box-shadow: 8px 8px 4px rgba(0, 0, 0, 0.25);
   margin-bottom: 25px;
 }
-label {
-  font-size: 30px;
+.signin-label {
+  font-size: 28px;
 }
 
-input {
+.signin-input {
   width: 60%;
   padding: 12px 20px;
   box-sizing: border-box;
   margin-top: 20px;
   margin-bottom: 20px;
+  background-color: #edf6f9;
+  border: none;
 }
-form {
+.signin-form {
   background-color: #83c5be;
   display: flex;
   flex-direction: column;
