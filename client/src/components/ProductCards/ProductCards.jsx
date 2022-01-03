@@ -7,7 +7,6 @@ function ProductCards({products}) {
     <div className='all-products'>
       {
         products.map(product => (
-          // <Link className='link' to={`/products/${product._id}`}>
           <div className='product-card-div'>
           <Link className='link' to={`/products/${product._id}`}>
             <h2>
@@ -16,7 +15,6 @@ function ProductCards({products}) {
             <img src={product.imgURL} alt="" />
           </Link>
           </div>
-        //  </Link>
       ))
       }
     </div>

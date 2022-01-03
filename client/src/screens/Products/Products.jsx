@@ -8,13 +8,8 @@ import './Products.css'
 function Products({products}) {
 
   return (
-
-    <div>
-     <ProductCards products={products}/>
-
     <div className='all-products'>
       <ProductCards products={products}/>
-
     </div>
   )
 }
