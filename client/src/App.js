@@ -10,8 +10,13 @@ import ProductDetails from './screens/ProductDetails/ProductDetails'
 import Contact from './screens/Contact/Contact'
 import { verifyUser } from './services/users'
 import SignIn from './screens/SignIn/SignIn'
+
+// import ProductDetails from './screens/ProductDetails/ProductDetails'
+import Nav from './components/Nav/Nav'
+
 import SignUp from './screens/SignUp/SignUp'
 import SignOut from './screens/SignOut/SignOut'
+
 
 function App() {
 
@@ -45,12 +50,21 @@ function App() {
   }, [])
   return (
     <div className="App">
+
+      <Nav />
+      <Routes>
+        <Route path={'/'} element={<Home />}/> 
+        <Route path={'/products'} element={<Products products={products}/>}/> 
+        <Route path={'/products/edit/:id'} element={<EditProducts />}/> 
+        {/* <Route path={'/products/:id'} element={<ProductDetails />}/>  */}
+
       <Routes>
         <Route path={'/'} element={<Home />}/> 
         <Route path={'/products'} element={<Products products={products} />} />
         <Route path={'/products/:id'} element={<ProductDetails user={user} />} />
         <Route path={'/products/:id/edit'} element={<EditProducts user={user} />} /> 
         {/* <Route path={'/products/:id/edit'} element={user ? <EditProducts user={user} /> : <Navigate to='/' /> }/>  */}
+
         <Route path={'/contact'} element={<Contact />}/> 
         <Route path={'/add-product'} element={<AddProducts user={user}/>} /> 
         {/* <Route path={'/add-product'} element={user ? <AddProducts user={user}/> : <Navigate to='/sign-up' />}/>  */}
