@@ -2,6 +2,7 @@ import React from 'react'
 import ProductCards from '../../components/ProductCards/ProductCards'
 import './Products.css'
 
+
 function Products({products}) {
 
 

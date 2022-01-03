@@ -1,0 +1,29 @@
+.navbar {
+    background-color: #83C5BE;
+    height: 80px;
+    display: flex;
+}
+
+.logo {
+    width: 300px;
+}
+
+.left-side {
+    flex: 1.5;
+    text-align: right;
+}
+
+.right-side {
+    flex: 1;
+    padding-top: 30px;
+}
+
+.link-tags {
+    color: black;
+    padding-left: 30px;  
+    cursor: pointer;
+}
+
+.move-right {
+    padding-left: 150px;
+}

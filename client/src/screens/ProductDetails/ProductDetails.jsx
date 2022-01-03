@@ -1,9 +1,8 @@
-
 import { useState, useEffect } from "react";
 import { postResp } from "../services";
 import { useNavigate, useParams } from "react-router-dom";
 
-export default function Form(props) {
+function ProductDetails(props) {
   const [imgURL, setImgURL] = useState("");
   const [name, setName] = useState("");
   const [location, setLocation] = useState("");
@@ -96,16 +95,6 @@ export default function Form(props) {
       <button>Submit :D</button>
     </form>
   );
-}
-
-import React from 'react'
-
-function ProductDetails() {
-  return (
-    <div>
-      
-    </div>
-  )
 }
 
 export default ProductDetails

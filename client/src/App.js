@@ -9,6 +9,8 @@ import AddProducts from './screens/AddProducts/AddProducts'
 import Contact from './screens/Contact/Contact'
 import { verifyUser } from './services/users'
 import SignIn from './screens/SignIn/SignIn'
+// import ProductDetails from './screens/ProductDetails/ProductDetails'
+import Nav from './components/Nav/Nav'
 
 function App() {
 
@@ -41,11 +43,12 @@ function App() {
   }, [])
   return (
     <div className="App">
-
+      <Nav />
       <Routes>
         <Route path={'/'} element={<Home />}/> 
         <Route path={'/products'} element={<Products products={products}/>}/> 
-        <Route path={'/products/:id'} element={<EditProducts />}/> 
+        <Route path={'/products/edit/:id'} element={<EditProducts />}/> 
+        {/* <Route path={'/products/:id'} element={<ProductDetails />}/>  */}
         <Route path={'/contact'} element={<Contact />}/> 
         <Route path={'/add-product'} element={<AddProducts />}/> 
         <Route path={'/products'} element={<Products products={products}/>}/> 

@@ -7,14 +7,16 @@ function ProductCards({products}) {
     <div className='all-products'>
       {
         products.map(product => (
-          <Link className='link' to={`/products/${product._id}`}>
+          // <Link className='link' to={`/products/${product._id}`}>
           <div className='product-card-div'>
+          <Link className='link' to={`/products/${product._id}`}>
             <h2>
-              {product.name}
+              {product.name.length < 15 ? product.name : `${product.name.slice(0, 15)}...`}
             </h2>
             <img src={product.imgURL} alt="" />
-          </div>
           </Link>
+          </div>
+        //  </Link>
       ))
       }
     </div>
