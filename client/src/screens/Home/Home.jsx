@@ -1,10 +1,12 @@
-import React from 'react'
+import Layout from '../../components/Layout/Layout'
 
-function Home() {
+function Home(props) {
   return (
+    <Layout user={props.user}>
     <div>
       
-    </div>
+      </div>
+      </Layout>
   )
 }
 

@@ -7,7 +7,7 @@ function SignUp(props) {
   const navigate = useNavigate();
 
   const [form, setForm] = useState({
-    name: "",
+    username: "",
     email: "",
     password: "",
     isError: false,
@@ -30,7 +30,7 @@ function SignUp(props) {
     } catch (error) {
       console.error(error);
       setForm({
-        name: "",
+        username: "",
         email: "",
         password: "",
         isError: true,
@@ -58,7 +58,7 @@ function SignUp(props) {
     }
   };
 
-  const { name, email, password } = form;
+  const { username, email, password } = form;
 
   return (
     <div className="signup-container">
@@ -72,8 +72,8 @@ function SignUp(props) {
             required
             className="signup-input"
             type="text"
-            name="name"
-            value={name}
+            name="username"
+            value={username}
             placeholder="Enter Name"
             onChange={handleChange}
           />
