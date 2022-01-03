@@ -1,5 +1,6 @@
 import { useEffect, useState } from "react";
 import { useParams } from "react-router-dom";
+import Layout from '../../components/Layout/Layout'
 import "./ProductDetails.css";
 
 export default function ProductDetails(props) {
@@ -14,6 +15,7 @@ export default function ProductDetails(props) {
   }, [params.id, props.products]);
 
   return (
+    <Layout user={props.user}>
     <div className="productDetails">
       { ProductDetails &&
       <div>
@@ -43,12 +45,12 @@ export default function ProductDetails(props) {
         <br />
         <div className="comments">
           <p>What kind of graphics card does it have?</p>
-          <p>I’m Interested!</p>
+          <p>I'm Interested!</p>
           <p>Hey is this available?</p>
         </div>
       </div>
+          }
       </div>
-}
-    </div>
+    </Layout>
   );
 }

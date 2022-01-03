@@ -1,7 +1,9 @@
 import "./Contact.css";
+import Layout from '../../components/Layout/Layout'
 
-function Contact() {
+function Contact(props) {
   return (
+    <Layout user={props.user}>
     <div className="main-contact">
       <h1 className='contact-h1'>Our Team</h1>
       <h3 className="sub-header-contact">This project was created using a mixture of React, Express,  MongoDB  and CSS in a total of 7 days!</h3>
@@ -22,7 +24,8 @@ function Contact() {
         </div>
       </div>
     </div>
-    // <div> Icons made by <a href="https://www.flaticon.com/authors/riajulislam" title="riajulislam"> riajulislam </a> from <a href="https://www.flaticon.com/" title="Flaticon">www.flaticon.com'</a></div>
+    {/* <div> Icons made by <a href="https://www.flaticon.com/authors/riajulislam" title="riajulislam"> riajulislam </a> from <a href="https://www.flaticon.com/" title="Flaticon">www.flaticon.com'</a></div> */}
+    </Layout>
   )
 }
 
