@@ -1,6 +1,6 @@
-import { React, useEffect, useState } from "react";
+import { useEffect, useState } from "react";
 import { useParams } from "react-router-dom";
-import "./ProductDetail.css";
+import "./ProductDetails.css";
 
 export default function ProductDetails(props) {
   const [ProductDetails, setProductDetails] = useState({});
@@ -41,7 +41,7 @@ export default function ProductDetails(props) {
         <br />
         <div className="comments">
           <p>What kind of graphics card does it have?</p>
-          <p>I’m Interested!</p>
+          <p>I'm Interested!</p>
           <p>Hey is this available?</p>
         </div>
       </div>
