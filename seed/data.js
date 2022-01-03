@@ -268,15 +268,15 @@ const insertData = async () => {
     },
 //Home Furniture
     {
-      imgURL: "https://scontent-ort2-1.xx.fbcdn.net/v/t45.5328-4/s960x960/269945358_4676347195794441_8747910173491755336_n.jpg?_nc_cat=107&ccb=1-5&_nc_sid=c48759&_nc_ohc=e0AADSGpz6UAX-5je3P&_nc_ht=scontent-ort2-1.xx&oh=00_AT-WwKwhXpWvScMnth2y9MV4FCRFhTlYxn9HWW0jO0amQA&oe=61C9B594",
+      imgURL: "https://img1.homary.com/filters:format(webp)/mall/file/2021/12/04/0cd962361d574ab0b942344c51aa255e.jpg",
       name: "Dining Table",
       condition: "Used",
       location: "San Antonio, TX",
       price: "350",
-      description: "Originally purchased at Rooms to Go. This dining set includes table, bench and 4 chairs. The chairs are grey and include their taupe covers.",
+      description: "Originally purchased at Rooms to Go. This dining set includes table, and 4 chairs.",
     },
     {
-      imgURL: "https://scontent-ort2-1.xx.fbcdn.net/v/t39.30808-6/p720x720/269851643_5015030845176461_1116020941043586178_n.jpg?_nc_cat=100&ccb=1-5&_nc_sid=843cd7&_nc_ohc=rRRXLpMR03wAX_aGBoi&_nc_ht=scontent-ort2-1.xx&oh=00_AT-WckzaOESP1u9umvdYpfOSvT7OshvAfiN8DPx8-ux1EA&oe=61C90FC5",
+      imgURL: "https://i5.walmartimages.com/asr/8ebe9728-7f18-4fa9-a40d-9353a9104161.d5ae8243e11742647fa73fb19f541242.jpeg?odnHeight=612&odnWidth=612&odnBg=FFFFFF",
       name: "Green Velvet Couch",
       condition: "Used",
       location: "Nashville, TN",
@@ -284,7 +284,7 @@ const insertData = async () => {
       description: "Green Velvet Couch. Like New. Price Negotiable"
     },
     {
-      imgURL: "https://scontent-ort2-1.xx.fbcdn.net/v/t45.5328-4/s960x960/257297334_5165936590090427_7868014599401111220_n.png?_nc_cat=110&ccb=1-5&_nc_sid=c48759&_nc_ohc=fSO4WutowlcAX--36Ft&_nc_ht=scontent-ort2-1.xx&oh=00_AT-LX_m-Q3dSCfW9lZhTRw3JHSZsALe3Hc-DNhJvxa98Aw&oe=61CA4E53",
+      imgURL: "https://assets.weimgs.com/weimgs/rk/images/wcm/products/202148/0175/mid-century-nightstand-z.jpg",
       name: "Modern Nighstand",
       condition: "Used",
       location: "Seattle, WA",
@@ -292,23 +292,23 @@ const insertData = async () => {
       description: "Made of stained pine and antique-finished metal hardware."
     },
     {
-      imgURL: "https://scontent-ort2-1.xx.fbcdn.net/v/t45.5328-4/s960x960/263520200_4407678929353974_126515322346596684_n.jpg?_nc_cat=100&ccb=1-5&_nc_sid=c48759&_nc_ohc=2_uQXdyr-J8AX8ReZt7&_nc_ht=scontent-ort2-1.xx&oh=00_AT9uT-tIdsNj6XjbEriTyoIN9mbbXNpc5c30gP_JnCu4RA&oe=61C97B29",
+      imgURL: "https://res.cloudinary.com/castlery/image/private/w_700,f_auto,q_auto/b_rgb:F3F3F3,c_fit/v1637919402/crusader/variants/41960014/Vincent-Dining-Table-180cm-Oak-Lifestyle-Crop.jpg",
       name: "Dining Table",
       condition: "Used",
       location: "Boston, MA",
-      price: "40",
-      description: "Nice dining table with leaf for extension, in good condition. The table top measures at approximately 59 1/2 inches long and 47 1/2 inches wide."
+      price: "440",
+      description: "This is such a beautiful table that goes well with any midcentury decor. Comfortably fits 4, could probably squeeze in 6; perfect for my small kitchen!"
     },
     {
-      imgURL: "https://scontent-ort2-1.xx.fbcdn.net/v/t45.5328-4/268502433_5064174416935390_3629381883542401577_n.jpg?_nc_cat=106&ccb=1-5&_nc_sid=c48759&_nc_ohc=EQA7RhRXS0sAX_elIAE&_nc_ht=scontent-ort2-1.xx&oh=00_AT9SGekngOyTyV5kkbGym68o_IeluCAIJ6zcuQG1OmhqTw&oe=61C8C863",
-      name: "Dining Table",
+      imgURL: "https://assets.weimgs.com/weimgs/rk/images/wcm/products/202130/0014/jack-metal-frame-dining-chair-set-of-2-z.jpg",
+      name: "Dining Chair",
       condition: "New",
       location: "San Diego, CA",
-      price: "400",
-      description: "Brand New. Ended up changing my mind"
+      price: "300",
+      description: "Brand New. Ended up changing my mind. Set up 2."
     },
     {
-      imgURL: "https://scontent-ort2-1.xx.fbcdn.net/v/t45.5328-4/s960x960/244667381_4925706214110510_8364105092200269377_n.jpg?_nc_cat=104&ccb=1-5&_nc_sid=c48759&_nc_ohc=_i6kr2jSJJwAX9hqpF_&_nc_ht=scontent-ort2-1.xx&oh=00_AT9vmuER4Psbut698ebC5w5jcRpXx9r8oELWBefdG3t0Uw&oe=61C9C9A7",
+      imgURL: "https://res.cloudinary.com/castlery/image/private/w_700,f_auto,q_auto/b_rgb:F3F3F3,c_fit/v1624960642/crusader/variants/52460065/August-TV-Console-Lifestyle-Crop.jpg",
       name: "Vintage Side Table",
       condition: "Used",
       location: "Atlanta, GA",
@@ -316,23 +316,23 @@ const insertData = async () => {
       description: "Perfect touch to your living room needs"
     },
     {
-      imgURL: "https://scontent-ort2-1.xx.fbcdn.net/v/t45.5328-4/s960x960/255865759_4513697085380629_4718360744026734678_n.jpg?_nc_cat=110&ccb=1-5&_nc_sid=c48759&_nc_ohc=PHHRlw6R-8cAX9ukAta&_nc_ht=scontent-ort2-1.xx&oh=00_AT_u3w4utEqEbdqxossqrE_O18Im3yf0nJ8a1gxYUKP2vA&oe=61CA66EF",
+      imgURL: "https://i8.amplience.net/i/wineenthusiast/35022_1?$f1200$&fmt=auto",
       name: "Barrel Table & Chairs",
       condition: "New",
       location: "Austin, TX",
       price: "450",
-      description: "Table & 4 chairs included. Set is made to order."
+      description: "Table & 2 chairs included. Set is made to order."
     },
     {
-      imgURL: "https://scontent-ort2-1.xx.fbcdn.net/v/t45.5328-4/s960x960/265559429_4581894568513032_3270711487124481274_n.jpg?_nc_cat=107&ccb=1-5&_nc_sid=c48759&_nc_ohc=pHSudsebQUEAX9CajAr&_nc_ht=scontent-ort2-1.xx&oh=00_AT_skf9OOoxA9LResV6lkFYu32MiZTNS45EhZhYUezG2Pg&oe=61CA2A97",
-      name: "End Table & Accent Chair",
+      imgURL: "https://assets.weimgs.com/weimgs/rk/images/wcm/products/202139/0014/industrial-storage-side-table-z.jpg",
+      name: "End Table",
       condition: "Used",
       location: "Miami, FL",
       price: "250",
-      description: "Dimensions of table: 21 in. H x 18 in. W. Slight scuff marks on table. Chair is in perfect condition."
+      description: "Slight scuff marks on table."
     },
     {
-      imgURL: "https://scontent-ort2-1.xx.fbcdn.net/v/t39.30808-6/p720x720/255003998_4130106107090735_7192215354163960698_n.jpg?_nc_cat=103&ccb=1-5&_nc_sid=843cd7&_nc_ohc=vVpQoeZCRpEAX9Gw_gN&_nc_ht=scontent-ort2-1.xx&oh=00_AT-3MQYAzlWZMNJD6hSWUD6w6O13EPrYm7r15Y35QrPUaQ&oe=61CA3691",
+      imgURL: "https://cb2.scene7.com/is/image/CB2/CamdenWhiteChairSHF21/$web_pdp_main_carousel_md$/210723122025/camden-wide-white-accent-chair.jpg",
       name: "White Armchair",
       condition: "Used",
       location: "Chicago, IL",
@@ -340,7 +340,7 @@ const insertData = async () => {
       description: "Excellent condition."
     },
     {
-      imgURL: "https://scontent-ort2-1.xx.fbcdn.net/v/t39.30808-6/p720x720/255003526_4130106110424068_8544250192857357175_n.jpg?_nc_cat=106&ccb=1-5&_nc_sid=843cd7&_nc_ohc=fjhKGyF1BsgAX-DJ74F&_nc_ht=scontent-ort2-1.xx&oh=00_AT8FlXMeNDKlLIID9ZVcfeL3AIgBV5Gp0CGBqO4VunFRAA&oe=61C97E59",
+      imgURL: "https://res.litfad.com/site/img/item/2020/06/12/886308/584x584.jpg",
       name: "Floral Lamp",
       condition: "Used",
       location: "Chicago, IL",

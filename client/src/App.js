@@ -10,6 +10,8 @@ import AddProducts from './screens/AddProducts/AddProducts'
 import Contact from './screens/Contact/Contact'
 import { verifyUser } from './services/users'
 import SignIn from './screens/SignIn/SignIn'
+import SignUp from './screens/SignUp/SignUp'
+import SignOut from './screens/SignOut/SignOut'
 
 function App() {
 
@@ -54,6 +56,8 @@ function App() {
         {/* <Route path={'/add-product'} element={user ? <AddProducts user={user}/> : <Navigate to='/sign-up' />}/>  */}
         <Route path={'/products'} element={<Products products={products} />}/> 
         <Route path='/signIn' element={<SignIn setUser={setUser}/>}/> 
+        <Route path='/sign-up' element={<SignUp setUser={setUser}/>}/>
+        <Route path="/sign-out" element={<SignOut setUser={setUser}/>} />
       </Routes>
     </div>
   );
