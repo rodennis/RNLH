@@ -7,7 +7,9 @@ function Nav() {
   return (
     <nav className='navbar'>
       <div className="left-side">
+        <Link to='/'>
         <img className='logo' src={logo} alt="" />
+        </Link>
       </div>
       <div className='right-side'>
           <Link className='link link-tags move-right' to='/products'>Products</Link>

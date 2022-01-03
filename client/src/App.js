@@ -50,23 +50,14 @@ function App() {
   }, [])
   return (
     <div className="App">
-
       <Nav />
       <Routes>
         <Route path={'/'} element={<Home />}/> 
-        <Route path={'/products'} element={<Products products={products}/>}/> 
-        <Route path={'/products/edit/:id'} element={<EditProducts />}/> 
-        {/* <Route path={'/products/:id'} element={<ProductDetails />}/>  */}
-
-      <Routes>
-        <Route path={'/'} element={<Home />}/> 
-        <Route path={'/products'} element={<Products products={products} />} />
+        <Route path={'/products'} element={<Products products={products} />}/> 
         <Route path={'/products/:id'} element={<ProductDetails user={user} />} />
         <Route path={'/products/:id/edit'} element={<EditProducts user={user} />} /> 
-        {/* <Route path={'/products/:id/edit'} element={user ? <EditProducts user={user} /> : <Navigate to='/' /> }/>  */}
-
-        <Route path={'/contact'} element={<Contact />}/> 
         <Route path={'/add-product'} element={<AddProducts user={user}/>} /> 
+        <Route path={'/contact'} element={<Contact />}/> 
         {/* <Route path={'/add-product'} element={user ? <AddProducts user={user}/> : <Navigate to='/sign-up' />}/>  */}
         <Route path='/signIn' element={<SignIn setUser={setUser}/>}/> 
         <Route path='/sign-up' element={<SignUp setUser={setUser}/>}/>
