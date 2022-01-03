@@ -1,6 +1,7 @@
 import { useEffect, useState } from "react";
 import { useParams } from "react-router-dom";
-import "./ProductDetail.css";
+import Layout from '../../components/Layout/Layout'
+import "./ProductDetails.css";
 
 export default function ProductDetails(props) {
   const [ProductDetails, setProductDetails] = useState({});
@@ -8,14 +9,15 @@ export default function ProductDetails(props) {
 
   useEffect(() => {
     const foundProductDetails = props.products.find((ProductDetails) => {
-      return ProductDetails.id === params.id;
+      return ProductDetails._id === params.id;
     });
     setProductDetails(foundProductDetails);
   }, [params.id, props.products]);
 
   return (
+    <Layout user={props.user}>
     <div className="productDetails">
-      <p className="bigName">{ProductDetails.name}</p>
+      <p className="bigName">{ProductDetails?.name}</p>
       <br />
       <p className="imgURL">{ProductDetails.imgURL}</p>
       <br />
@@ -41,10 +43,11 @@ export default function ProductDetails(props) {
         <br />
         <div className="comments">
           <p>What kind of graphics card does it have?</p>
-          <p>I’m Interested!</p>
+          <p>I'm Interested!</p>
           <p>Hey is this available?</p>
         </div>
       </div>
-    </div>
+      </div>
+    </Layout>
   );
 }

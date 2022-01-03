@@ -49,11 +49,10 @@ function App() {
   }, [])
   return (
     <div className="App">
-      <Nav />
       <Routes>
         <Route path={'/'} element={<Home />}/> 
         <Route path={'/products'} element={<Products products={products} />}/> 
-        <Route path={'/products/:id'} element={<ProductDetails user={user} />} />
+        <Route path={'/products/:id'} element={<ProductDetails user={user} products={products} />} />
         <Route path={'/products/:id/edit'} element={<EditProducts user={user} />} /> 
         {/* <Route path={'/products/:id/edit'} element={user ? <EditProducts user={user}/> : <Navigate to='/sign-up' />}/>  */}
         <Route path={'/add-product'} element={<AddProducts user={user} />} /> 
