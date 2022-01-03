@@ -1,8 +1,16 @@
 .product-card-div {
-
+    flex: 1;
+    width: 415;
+    height: 400;
+    background-color: #83C5BE;
 }
 
 .product-card-div img{
     width: 415px;
     height: 217px;
+}
+
+.all-products {
+    display: flex;
+    flex-wrap: wrap;
 }
