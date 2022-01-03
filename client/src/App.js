@@ -41,6 +41,7 @@ function App() {
   }, [])
   return (
     <div className="App">
+
       <Routes>
         <Route path={'/'} element={<Home />}/> 
         <Route path={'/products'} element={<Products products={products}/>}/> 
@@ -50,6 +51,9 @@ function App() {
         <Route path={'/products'} element={<Products products={products}/>}/> 
         <Route path='/signIn' element={<SignIn setUser={setUser}/>}/> 
       </Routes>
+
+
+
     </div>
   );
 }
