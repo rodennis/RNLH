@@ -1,3 +1,4 @@
+
 import { useState, useEffect } from "react";
 import { postResp } from "../services";
 import { useNavigate, useParams } from "react-router-dom";
@@ -96,3 +97,16 @@ export default function Form(props) {
     </form>
   );
 }
+
+import React from 'react'
+
+function ProductDetails() {
+  return (
+    <div>
+      
+    </div>
+  )
+}
+
+export default ProductDetails
+
