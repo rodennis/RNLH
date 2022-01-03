@@ -10,12 +10,11 @@ import ProductDetails from './screens/ProductDetails/ProductDetails'
 import Contact from './screens/Contact/Contact'
 import { verifyUser } from './services/users'
 import SignIn from './screens/SignIn/SignIn'
-
-// import ProductDetails from './screens/ProductDetails/ProductDetails'
-import Nav from './components/Nav/Nav'
-
 import SignUp from './screens/SignUp/SignUp'
 import SignOut from './screens/SignOut/SignOut'
+import Nav from './components/Nav/Nav'
+
+
 
 
 function App() {
@@ -56,9 +55,10 @@ function App() {
         <Route path={'/products'} element={<Products products={products} />}/> 
         <Route path={'/products/:id'} element={<ProductDetails user={user} />} />
         <Route path={'/products/:id/edit'} element={<EditProducts user={user} />} /> 
-        <Route path={'/add-product'} element={<AddProducts user={user}/>} /> 
-        <Route path={'/contact'} element={<Contact />}/> 
+        {/* <Route path={'/products/:id/edit'} element={user ? <EditProducts user={user}/> : <Navigate to='/sign-up' />}/>  */}
+        <Route path={'/add-product'} element={<AddProducts user={user} />} /> 
         {/* <Route path={'/add-product'} element={user ? <AddProducts user={user}/> : <Navigate to='/sign-up' />}/>  */}
+        <Route path={'/contact'} element={<Contact />}/> 
         <Route path='/signIn' element={<SignIn setUser={setUser}/>}/> 
         <Route path='/sign-up' element={<SignUp setUser={setUser}/>}/>
         <Route path="/sign-out" element={<SignOut setUser={setUser}/>} />

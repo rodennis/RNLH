@@ -1,6 +1,6 @@
 import { useState, useEffect } from "react";
-import { postResp } from "../services";
 import { useNavigate, useParams } from "react-router-dom";
+import "./ProductDetails.css";
 
 function ProductDetails(props) {
   const [imgURL, setImgURL] = useState("");
@@ -10,10 +10,6 @@ function ProductDetails(props) {
   const [price, setPrice] = useState("");
   const [description, setDescription] = useState("");
   const navigate = useNavigate();
-
-import { useEffect, useState } from "react";
-import { useParams } from "react-router-dom";
-import "./ProductDetails.css";
 
 export default function ProductDetails(props) {
   const [ProductDetails, setProductDetails] = useState({});
