@@ -1,6 +1,6 @@
 import { useEffect, useState } from "react";
 import { useParams } from "react-router-dom";
-import "./ProductDetail.css";
+import "./ProductDetails.css";
 
 export default function ProductDetails(props) {
   const [ProductDetails, setProductDetails] = useState({});
@@ -8,13 +8,15 @@ export default function ProductDetails(props) {
 
   useEffect(() => {
     const foundProductDetails = props.products.find((ProductDetails) => {
-      return ProductDetails.id === params.id;
+      return ProductDetails._id === params.id;
     });
     setProductDetails(foundProductDetails);
   }, [params.id, props.products]);
 
   return (
     <div className="productDetails">
+      { ProductDetails &&
+      <div>
       <p className="bigName">{ProductDetails.name}</p>
       <br />
       <p className="imgURL">{ProductDetails.imgURL}</p>
@@ -45,6 +47,8 @@ export default function ProductDetails(props) {
           <p>Hey is this available?</p>
         </div>
       </div>
+      </div>
+}
     </div>
   );
 }
