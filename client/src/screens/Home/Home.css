@@ -1,0 +1,49 @@
+@import url("https://fonts.googleapis.com/css2?family=Italiana&family=Montserrat:wght@400;600&display=swap");
+
+.car-items {
+  width: 150px;
+  border-radius: 8px;
+}
+
+.item-names {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 400;
+}
+
+.main-container-items {
+  padding: 15px;
+}
+
+.car-header {
+  font-family: "Italiana", serif;
+  font-weight: 400;
+}
+
+.welcome-msg {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 400;
+  font-size: 48px;
+}
+
+.main-img {
+  width: 709px;
+  height: 433px;
+}
+
+.sub-header {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 400;
+  font-size: 24px;
+}
+
+.main-home {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  margin-bottom: 80px;
+}
+
+.welcome-div {
+  padding: 0 20px;
+  width: 640px;
+}
