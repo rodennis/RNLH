@@ -12,6 +12,7 @@ import { verifyUser } from './services/users'
 import SignIn from './screens/SignIn/SignIn'
 import SignUp from './screens/SignUp/SignUp'
 import SignOut from './screens/SignOut/SignOut'
+import Nav from './components/Nav/Nav';
 
 
 
@@ -50,6 +51,7 @@ function App() {
 
   return (
     <div className="App">
+      <Nav user={user}/>
       <Routes>
         <Route path={'/'} element={<Home />}/> 
         <Route path={'/products'} element={<Products products={products} />}/> 

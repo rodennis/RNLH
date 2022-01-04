@@ -2,26 +2,25 @@ import React from 'react'
 import './Nav.css'
 import{Link} from 'react-router-dom'
 import logo from '../../photos/background.png'
-
-function Nav({user}) {
-
-  const authenticatedOptions = (
-    <>
-        <Link className="link link-tags" to="/add-product">Add Product</Link>
-        <Link className="link link-tags" to="/sign-out">Sign Out</Link>
-    </>
+const authenticatedOptions = (
+  <>
+      <Link className="link link-tags" to="/add-product">Add Product</Link>
+      <Link className="link link-tags" to="/sign-out">Sign Out</Link>
+  </>
 )
 const unauthenticatedOptions = (
-    <>
-        <Link className='link link-tags' to='/sign-in'>Sign In</Link>
-        <Link className='link link-tags' to='/sign-up'>Sign Up</Link>
-    </>
+  <>
+      <Link className='link link-tags' to='/sign-in'>Sign In</Link>
+      <Link className='link link-tags' to='/sign-up'>Sign Up</Link>
+  </>
 )
 const alwaysOptions = (
-    <>
-        <Link className='link link-tags move-right' to='/products'>Products</Link>
-    </>
+  <>
+      <Link className='link link-tags move-right' to='/products'>Products</Link>
+  </>
 )
+
+const Nav = ({user}) => {
   return (
     <nav className='navbar'>
       <div className={user ? 'user-display' : 'left-side'}>
