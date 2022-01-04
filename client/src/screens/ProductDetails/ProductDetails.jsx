@@ -1,6 +1,6 @@
 import { useEffect, useState } from "react";
 import { useParams } from "react-router-dom";
-import Layout from '../../components/Layout/Layout'
+import Layout from "../../components/Layout/Layout";
 import "./ProductDetails.css";
 
 export default function ProductDetails(props) {
@@ -16,29 +16,29 @@ export default function ProductDetails(props) {
 
   return (
     <Layout user={props.user}>
-    <div className="productDetails">
-        {ProductDetails &&
+      <div className="productDetails">
+        {ProductDetails && (
           <div>
             <p className="bigName">{ProductDetails.name}</p>
             <br />
             <p className="imgURL">{ProductDetails.imgURL}</p>
             <br />
-
-            <br />
-            <p className="locationTag">Location:</p>
+            <h3 className="locationTag">Location:</h3>
             <p className="location">{ProductDetails.location}</p>
             <br />
-            <p className="conditionTag">Condition:</p>
-            <p className="condition">{ProductDetails.condition}</p>
+            <div className="conditionTag">
+              <h2>Condition:</h2>
+              <ul>{ProductDetails.condition}</ul>
+            </div>
             <br />
-            <p className="nameTag">Item Name:</p>
-            <p className="smallName">{ProductDetails.name}</p>
+            <h2>Item Name:</h2>
+            <ul>{ProductDetails.name}</ul>
             <br />
-            <p className="priceTag">Price:</p>
-            <p className="price">{ProductDetails.price}</p>
+            <h2>Price:</h2>
+            <ul>{ProductDetails.price}</ul>
             <br />
-            <p className="descriptionTag">Description:</p>
-            <p className="description">{ProductDetails.description}</p>
+            <h2>Description:</h2>
+            <ul>{ProductDetails.description}</ul>
             <br />
             {/* <div>
               <b className="commentsTag">Comments</b>
@@ -50,8 +50,8 @@ export default function ProductDetails(props) {
               </div>
             </div> */}
           </div>
-        }
-        </div>
+        )}
+      </div>
     </Layout>
   );
 }
