@@ -19,26 +19,26 @@ export default function ProductDetails(props) {
       <div className="productDetails">
         {ProductDetails && (
           <div>
-            <p className="bigName">{ProductDetails.name}</p>
+            <p className="big-name">{ProductDetails.name}</p>
             <br />
             <p className="imgURL">{ProductDetails.imgURL}</p>
             <br />
-            <h3 className="locationTag">Location:</h3>
+            <h3 className="location-tag">Location:</h3>
             <p className="location">{ProductDetails.location}</p>
             <br />
-            <div className="conditionTag">
-              <h2>Condition:</h2>
-              <ul>{ProductDetails.condition}</ul>
+            <div className="condition-tag">
+              <h2 className="details-subheader">Condition:</h2>
+              <p className="details-info">{ProductDetails.condition}</p>
             </div>
             <br />
-            <h2>Item Name:</h2>
-            <ul>{ProductDetails.name}</ul>
+            <h2 className="details-subheader">Item Name:</h2>
+            <p className="details-info">{ProductDetails.name}</p>
             <br />
-            <h2>Price:</h2>
-            <ul>{ProductDetails.price}</ul>
+            <h2 className="details-subheader">Price:</h2>
+            <p className="details-info">{ProductDetails.price}</p>
             <br />
-            <h2>Description:</h2>
-            <ul>{ProductDetails.description}</ul>
+            <h2 className="details-subheader">Description:</h2>
+            <p className="details-info">{ProductDetails.description}</p>
             <br />
             {/* <div>
               <b className="commentsTag">Comments</b>
