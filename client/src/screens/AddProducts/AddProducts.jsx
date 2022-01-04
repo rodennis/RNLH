@@ -30,6 +30,7 @@ function AddProducts(props) {
     e.preventDefault()
     await createProduct(product)
     nav('/products')
+    props.setToggle(prevToggle => !prevToggle);
   }
 
   return (
