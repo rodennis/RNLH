@@ -2,6 +2,7 @@ import { useState } from "react";
 import { signIn } from "../../services/users";
 import { useNavigate } from "react-router-dom";
 import "./SignIn.css";
+import Layout from '../../components/Layout/Layout'
 
 function SignIn(props) {
   const navigate = useNavigate();
@@ -60,6 +61,7 @@ function SignIn(props) {
   const { email, password } = form;
 
   return (
+    <Layout user={props.user}>
     <div className="signin-container">
       <div>
         <div className="header-signin">
@@ -97,7 +99,8 @@ function SignIn(props) {
           {renderError()}
         </form>
       </div>
-    </div>
+      </div>
+      </Layout>
   );
 }
 
