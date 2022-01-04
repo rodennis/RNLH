@@ -1,15 +1,16 @@
-.contactNav {
-  background-color: #83c5be;
-}
-
-/*   height: 60px;
+.footer {
+  min-height: 80px;
   display: flex;
-} */
+  background-color: #83c5be;
+  align-items: center;
+  justify-content: center;
+} 
 
-/* background-color: #83c5be;
-  height: 80px;
-  background-position: center;
-  line-height: 60px;
-  background-size: 300px 100px; */
-
-/* CSS be wierd */
+.footer-contact {
+  background-color: #006D77;
+  border: none;
+  border-radius: 10px;
+  color: white;
+  padding: 20px;
+  font-family: 'montserrat';
+}
