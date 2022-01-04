@@ -3,18 +3,36 @@ import './Nav.css'
 import{Link} from 'react-router-dom'
 import logo from '../../photos/background.png'
 
-function Nav() {
+function Nav({user}) {
+
+  const authenticatedOptions = (
+    <>
+        <Link className="link link-tags" to="/add-product">Add Product</Link>
+        <Link className="link link-tags" to="/sign-out">Sign Out</Link>
+    </>
+)
+const unauthenticatedOptions = (
+    <>
+        <Link className='link link-tags' to='/sign-in'>Sign In</Link>
+        <Link className='link link-tags' to='/sign-up'>Sign Up</Link>
+    </>
+)
+const alwaysOptions = (
+    <>
+        <Link className='link link-tags move-right' to='/products'>Products</Link>
+    </>
+)
   return (
     <nav className='navbar'>
-      <div className="left-side">
+      <div className={user ? 'user-display' : 'left-side'}>
+        {user && <div className="welcome">Welcome, {user.username}</div>}
         <Link to='/'>
         <img className='logo' src={logo} alt="" />
         </Link>
       </div>
       <div className='right-side'>
-          <Link className='link link-tags move-right' to='/products'>Products</Link>
-          <Link className='link link-tags' to='/login'>Login</Link>
-          <Link className='link link-tags' to='/'>Sign Up</Link>
+          {alwaysOptions}
+          {user ? authenticatedOptions : unauthenticatedOptions}
       </div>
     </nav>
   )
