@@ -1,0 +1,51 @@
+.carousel {
+  overflow: hidden;
+  margin: auto;
+  max-width: 600px;
+}
+
+.inner {
+  white-space: nowrap;
+  transition: transform 0.3s;
+
+  /* overflow: hidden; */
+}
+
+.carousel-item {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  height: 200px;
+  background-color: #006277;
+  color: #fff;
+}
+
+.indicators {
+  display: flex;
+  justify-content: center;
+}
+
+.indicators > button {
+  margin: 5px;
+}
+
+.indicators > button.active {
+  background-color: green;
+  color: #fff;
+}
+
+.prev {
+  position: relative;
+  bottom: 120px;
+  right: 300px;
+  background: none;
+  border: none;
+}
+
+.next {
+  position: relative;
+  left: 300px;
+  bottom: 120px;
+  background: none;
+  border: none;
+}
