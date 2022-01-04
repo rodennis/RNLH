@@ -12,8 +12,7 @@ import { verifyUser } from './services/users'
 import SignIn from './screens/SignIn/SignIn'
 import SignUp from './screens/SignUp/SignUp'
 import SignOut from './screens/SignOut/SignOut'
-import Nav from './components/Nav/Nav'
-
+import Layout from './components/Layout/Layout';
 
 
 
@@ -49,7 +48,7 @@ function App() {
   }, [])
   return (
     <div className="App">
-      <Nav />
+      <Layout user={user}>
       <Routes>
         <Route path={'/'} element={<Home />}/> 
         <Route path={'/products'} element={<Products products={products} />}/> 
@@ -59,10 +58,11 @@ function App() {
         <Route path={'/add-product'} element={<AddProducts user={user} />} /> 
         {/* <Route path={'/add-product'} element={user ? <AddProducts user={user}/> : <Navigate to='/sign-up' />}/>  */}
         <Route path={'/contact'} element={<Contact />}/> 
-        <Route path='/signIn' element={<SignIn setUser={setUser}/>}/> 
+        <Route path='/sign-in' element={<SignIn setUser={setUser}/>}/> 
         <Route path='/sign-up' element={<SignUp setUser={setUser}/>}/>
         <Route path="/sign-out" element={<SignOut setUser={setUser}/>} />
       </Routes>
+      </Layout>
     </div>
   );
 }

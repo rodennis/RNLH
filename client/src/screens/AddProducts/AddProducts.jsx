@@ -1,6 +1,5 @@
 import { useState } from 'react'
 import './AddProducts.css'
-import Layout from '../../components/Layout/Layout'
 import { useNavigate } from 'react-router-dom'
 import { createProduct } from '../../services/products'
 
@@ -34,7 +33,6 @@ function AddProducts(props) {
 
   return (
     <div>
-      <Layout user={props.user}>
         <div className='main-create'>
           <div className='sub-create'>
             <div className='helper-text'>
@@ -69,7 +67,6 @@ function AddProducts(props) {
             </div>
           </div>
         </div>
-      </Layout>
     </div>
   )
 }
