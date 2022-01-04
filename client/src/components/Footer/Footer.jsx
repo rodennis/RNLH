@@ -4,13 +4,12 @@ import "./Footer.css";
 
 function Footer() {
   return (
-    <div>
-      <nav>
-        <Link classname="contactNav" to="/contact">
-          Contact Us!
+    <nav className="footer">
+
+        <Link className="link" to="/contact">
+         <button className="footer-contact" >Contact Us!</button>
         </Link>
-      </nav>
-    </div>
+    </nav>
   );
 }
 
