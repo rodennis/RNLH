@@ -40,6 +40,7 @@ function EditProducts(props) {
     e.preventDefault();
     await updateProduct(id, product);
     nav(`/products/${id}`);
+    props.setToggle(prevToggle => !prevToggle);
   };
 
   return (

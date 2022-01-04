@@ -20,6 +20,7 @@ function App() {
 
   const[products, setProducts] = useState([])
   const [user, setUser] = useState(null)
+  const [toggle, setToggle] = useState(false);
 
   useEffect(() => {
     try {
@@ -45,17 +46,20 @@ function App() {
     }
     response()
 
-  }, [])
+  }, [toggle])
+
   return (
     <div className="App">
+
       <Layout user={user}>
+
       <Routes>
         <Route path={'/'} element={<Home />}/> 
         <Route path={'/products'} element={<Products products={products} />}/> 
         <Route path={'/products/:id'} element={<ProductDetails user={user} products={products}/>} />
-        <Route path={'/products/:id/edit'} element={<EditProducts user={user} />} /> 
+        <Route path={'/products/:id/edit'} element={<EditProducts user={user} setToggle={setToggle} />} /> 
         {/* <Route path={'/products/:id/edit'} element={user ? <EditProducts user={user}/> : <Navigate to='/sign-up' />}/>  */}
-        <Route path={'/add-product'} element={<AddProducts user={user} />} /> 
+        <Route path={'/add-product'} element={<AddProducts user={user} setToggle={setToggle}/>} /> 
         {/* <Route path={'/add-product'} element={user ? <AddProducts user={user}/> : <Navigate to='/sign-up' />}/>  */}
         <Route path={'/contact'} element={<Contact />}/> 
         <Route path='/sign-in' element={<SignIn setUser={setUser}/>}/> 
