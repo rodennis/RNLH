@@ -1,16 +1,18 @@
 import React from 'react'
 import ProductCards from '../../components/ProductCards/ProductCards'
-
+import Layout from '../../components/Layout/Layout'
 import './Products.css'
 
 
 
-function Products({products}) {
+function Products({products}, props) {
 
   return (
+    <Layout user={props.user}>
     <div className='all-products'>
       <ProductCards products={products}/>
     </div>
+    </Layout>
   )
 }
 
