@@ -8,26 +8,31 @@ import hamburger from '../../photos/hamburger.png'
 const Nav = ({user}) => {
 
   const [toggle, setToggle] = useState(false)
+  const [newToggle, setNewToggle] = useState(false)
 
   const handleClick = () => {
     setToggle(prevToggle => !prevToggle)
   }
 
+  const handleToggleClick = () => {
+setNewToggle(prevToggle => !prevToggle)
+  }
+
   const authenticatedOptions = (
     <>
-        <Link onClick={handleClick} className="link link-tags" to="/add-product">Add Product</Link>
-        <Link onClick={handleClick} className="link link-tags" to="/sign-out">Sign Out</Link>
+        <Link className="link link-tags" to="/add-product">Add Product</Link>
+        <Link className="link link-tags" to="/sign-out">Sign Out</Link>
     </>
   )
   const unauthenticatedOptions = (
     <>
-        <Link onClick={handleClick} className='link link-tags' to='/sign-in'>Sign In</Link>
-        <Link onClick={handleClick} className='link link-tags' to='/sign-up'>Sign Up</Link>
+        <Link className='link link-tags' to='/sign-in'>Sign In</Link>
+        <Link className='link link-tags' to='/sign-up'>Sign Up</Link>
     </>
   )
   const alwaysOptions = (
     <>
-        <Link onClick={handleClick} className='link link-tags move-right' to='/products'>Products</Link>
+        <Link onClick={handleToggleClick} className='link link-tags move-right' to='/products'>Products</Link>
     </>
   )
 
