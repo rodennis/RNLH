@@ -39,7 +39,6 @@ function App() {
     const response = async () => {
       try {
         const res = await getProducts('/products')
-        console.log(res)
       setProducts(res)
       } catch (error) {
         console.log(error)

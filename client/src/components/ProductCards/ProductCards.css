@@ -33,3 +33,17 @@ h6 {
     display: flex;
     flex-wrap: wrap;
 }
+
+@media (max-width: 480px) {
+    .all-products {
+        margin: auto;
+        right: 0px;
+        left: 0px;
+    }
+
+    .layout {
+        align-items: center;
+    }
+
+
+}
