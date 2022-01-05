@@ -16,42 +16,57 @@ export default function ProductDetails(props) {
 
   return (
     <Layout user={props.user}>
-      <div className="productDetails">
-        {ProductDetails && (
-          <div>
-            <p className="big-name">{ProductDetails.name}</p>
-            <br />
-            <p className="imgURL">{ProductDetails.imgURL}</p>
-            <br />
-            <h3 className="location-tag">Location:</h3>
-            <p className="location">{ProductDetails.location}</p>
-            <br />
-            <div className="condition-tag">
-              <h2 className="details-subheader">Condition:</h2>
-              <p className="details-info">{ProductDetails.condition}</p>
-            </div>
-            <br />
-            <h2 className="details-subheader">Item Name:</h2>
-            <p className="details-info">{ProductDetails.name}</p>
-            <br />
-            <h2 className="details-subheader">Price:</h2>
-            <p className="details-info">{ProductDetails.price}</p>
-            <br />
-            <h2 className="details-subheader">Description:</h2>
-            <p className="details-info">{ProductDetails.description}</p>
-            <br />
-            {/* <div>
-              <b className="commentsTag">Comments</b>
-              <br />
-              <div className="comments">
-                <p>What kind of graphics card does it have?</p>
-                <p>I'm Interested!</p>
-                <p>Hey is this available?</p>
-              </div>
-            </div> */}
+      {ProductDetails && (
+        <div>
+          <div className="product-details-name">
+            <p>{ProductDetails.name}</p>
           </div>
-        )}
-      </div>
+          <div className="product-details">
+            <div className="details-img">
+              <img src={ProductDetails.imgURL} alt="" />
+            </div>
+
+            <div className="details-info">
+              <div className="top-head-deets">
+                <div className="edit-delete">
+                  <h3 className="details-subheader">Location:</h3>
+                  <p className="details-location">{ProductDetails.location}</p>
+                </div>
+                <div className="buttons-ed">
+                  <button className="buttons-e">Edit</button>
+                  <button className="buttons-d">Delete</button>
+                </div>
+              </div>
+
+              <div className="all-deets">
+                <br />
+
+                <h2 className="details-subhead">Condition:</h2>
+                <span className="details-cond">{ProductDetails.condition}</span>
+
+                <br />
+
+                <h2 className="details-subheader1">Item Name:</h2>
+                <span className="details-name">{ProductDetails.name}</span>
+
+                <br />
+
+                <h2 className="details-subheader2">Price:</h2>
+                <span className="details-price">{ProductDetails.price}</span>
+
+                <br />
+
+                <h2 className="details-subheader3">Description:</h2>
+                <span className="details-desc">
+                  {ProductDetails.description}
+                </span>
+
+                <br />
+              </div>
+            </div>
+          </div>
+        </div>
+      )}
     </Layout>
   );
 }
