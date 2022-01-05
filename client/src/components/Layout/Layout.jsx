@@ -1,11 +1,14 @@
-import React from 'react'
+import './Layout.css'
+import Nav from '../Nav/Nav'
+import Footer from '../Footer/Footer'
 
-function Layout() {
-  return (
-    <div>
-      
+const Layout = (props) => (
+    <div className='layout'>
+        <div className="layout-children">
+            {props.children}
+        </div>
+        <Footer />
     </div>
-  )
-}
+)
 
 export default Layout

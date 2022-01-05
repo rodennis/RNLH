@@ -1,0 +1,16 @@
+.footer {
+  min-height: 80px;
+  display: flex;
+  background-color: #83c5be;
+  align-items: center;
+  justify-content: center;
+} 
+
+.footer-contact {
+  background-color: #006D77;
+  border: none;
+  border-radius: 10px;
+  color: white;
+  padding: 20px;
+  font-family: 'montserrat';
+}

@@ -1,0 +1,81 @@
+@import url("https://fonts.googleapis.com/css2?family=Italiana&family=Montserrat:wght@400;600&display=swap");
+
+.car-items {
+  width: 200px;
+  border-radius: 8px;
+  height: 200px;
+}
+.car-items-1 {
+  width: 200px;
+  border-radius: 8px;
+  height: 200px;
+  margin-top: -15px;
+}
+.item-names {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 400;
+  font-size: 18px;
+  flex-wrap: wrap;
+}
+.item-names-1 {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 400;
+  font-size: 18px;
+  flex-wrap: wrap;
+  margin: 5px 0px;
+}
+
+.main-container-items {
+  padding: 15px;
+  margin-top: 30px;
+}
+
+.car-header {
+  font-family: "Italiana", serif;
+  font-weight: 400;
+  font-size: 48px;
+}
+
+.welcome-msg {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 400;
+  font-size: 48px;
+}
+
+.main-img {
+  width: 709px;
+  height: 433px;
+  border-radius: 8px;
+}
+
+.sub-header {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 400;
+  font-size: 24px;
+}
+
+.main-home {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  margin-bottom: 80px;
+  justify-content: space-evenly;
+  margin-top: 30px;
+}
+
+.welcome-div {
+  padding: 0 20px;
+  width: 640px;
+}
+.products-link {
+  text-decoration: none;
+  background-color: #006277;
+  padding: 15px;
+  border-radius: 8px;
+  color: white;
+  font-family: "Italiana", serif;
+  font-size: 22px;
+  letter-spacing: 2px;
+  display: inline-block;
+  margin-top: 20px;
+}
