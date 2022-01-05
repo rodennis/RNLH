@@ -2,7 +2,7 @@ import { useState } from "react";
 import { signUp } from "../../services/users";
 import { useNavigate } from "react-router-dom";
 import "./SignUp.css";
-import Layout from '../../components/Layout/Layout'
+import Layout from "../../components/Layout/Layout";
 
 function SignUp(props) {
   const navigate = useNavigate();
@@ -63,47 +63,47 @@ function SignUp(props) {
 
   return (
     <Layout user={props.user}>
-    <div className="signup-container">
-      <div>
-        <div className="header-signup">
-          <h3 className="signup">Sign Up</h3>
+      <div className="signup-container">
+        <div>
+          <div className="header-signup">
+            <h3 className="signup">Sign Up</h3>
+          </div>
+          <form className="signup-form" onSubmit={onSignUp}>
+            <label className="signup-label">Username: </label>
+            <input
+              required
+              className="signup-input"
+              type="text"
+              name="username"
+              value={username}
+              placeholder="Enter Username"
+              onChange={handleChange}
+            />
+            <label className="signup-label">Email: </label>
+            <input
+              required
+              className="signup-input"
+              type="email"
+              name="email"
+              value={email}
+              placeholder="Enter email"
+              onChange={handleChange}
+            />
+            <label className="signup-label">Password: </label>
+            <input
+              required
+              className="signup-input"
+              name="password"
+              value={password}
+              type="password"
+              placeholder="Password"
+              onChange={handleChange}
+            />
+            {renderError()}
+          </form>
         </div>
-        <form className="signup-form" onSubmit={onSignUp}>
-          <label className="signup-label">Name: </label>
-          <input
-            required
-            className="signup-input"
-            type="text"
-            name="username"
-            value={username}
-            placeholder="Enter Name"
-            onChange={handleChange}
-          />
-          <label className="signup-label">Email: </label>
-          <input
-            required
-            className="signup-input"
-            type="email"
-            name="email"
-            value={email}
-            placeholder="Enter email"
-            onChange={handleChange}
-          />
-          <label className="signup-label">Password: </label>
-          <input
-            required
-            className="signup-input"
-            name="password"
-            value={password}
-            type="password"
-            placeholder="Password"
-            onChange={handleChange}
-          />
-          {renderError()}
-        </form>
       </div>
-      </div>
-      </Layout>
+    </Layout>
   );
 }
 
