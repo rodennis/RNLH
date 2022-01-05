@@ -30,6 +30,7 @@
     padding-left: 30px;  
     cursor: pointer;
     font-family: 'italiana';
+    letter-spacing: 1px;
 }
 
 .move-right {
@@ -42,5 +43,6 @@
     text-align: left;
     padding-top: 30px;
     padding-left: 75px;
-font-family: 'italiana';
+    font-family: 'italiana';
+    letter-spacing: 1px;
 }
