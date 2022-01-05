@@ -2,7 +2,7 @@ import { useState } from "react";
 import { signIn } from "../../services/users";
 import { useNavigate } from "react-router-dom";
 import "./SignIn.css";
-import Layout from '../../components/Layout/Layout'
+import Layout from "../../components/Layout/Layout";
 
 function SignIn(props) {
   const navigate = useNavigate();
@@ -62,45 +62,45 @@ function SignIn(props) {
 
   return (
     <Layout user={props.user}>
-    <div className="signin-container">
-      <div>
-        <div className="header-signin">
-          <h3 className="signin">Sign In</h3>
-        </div>
-
-        <form className="signin-form" onSubmit={onSignIn}>
-          <div className="container">
-            <label className="signin-label">Email: </label>
-            <div className="signin-email">
-              <input
-                required
-                className="signin-input"
-                type="text"
-                name="email"
-                value={email}
-                placeholder="Enter Email"
-                onChange={handleChange}
-              />
-            </div>
-
-            <label className="signin-label">Password: </label>
-            <div className="signin-pw">
-              <input
-                required
-                className="signin-input"
-                name="password"
-                value={password}
-                type="password"
-                placeholder="Password"
-                onChange={handleChange}
-              />
-            </div>
+      <div className="signin-container">
+        <div>
+          <div className="header-signin">
+            <h3 className="signin">Sign In</h3>
           </div>
-          {renderError()}
-        </form>
+
+          <form className="signin-form" onSubmit={onSignIn}>
+            <div className="container">
+              <label className="signin-label">Email: </label>
+              <div className="signin-email">
+                <input
+                  required
+                  className="signin-input"
+                  type="text"
+                  name="email"
+                  value={email}
+                  placeholder="Enter Email"
+                  onChange={handleChange}
+                />
+              </div>
+
+              <label className="signin-label">Password: </label>
+              <div className="signin-pw">
+                <input
+                  required
+                  className="signin-input"
+                  name="password"
+                  value={password}
+                  type="password"
+                  placeholder="Password"
+                  onChange={handleChange}
+                />
+              </div>
+            </div>
+            {renderError()}
+          </form>
+        </div>
       </div>
-      </div>
-      </Layout>
+    </Layout>
   );
 }
 
