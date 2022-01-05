@@ -2,6 +2,7 @@ import { useState } from 'react'
 import './AddProducts.css'
 import { useNavigate } from 'react-router-dom'
 import { createProduct } from '../../services/products'
+import Layout from '../../components/Layout/Layout'
 
 function AddProducts(props) {
 
@@ -33,6 +34,7 @@ function AddProducts(props) {
   }
 
   return (
+    <Layout user={props.user}>
     <div>
         <div className='main-create'>
           <div className='sub-create'>
@@ -68,7 +70,8 @@ function AddProducts(props) {
             </div>
           </div>
         </div>
-    </div>
+      </div>
+      </Layout>
   )
 }
 
