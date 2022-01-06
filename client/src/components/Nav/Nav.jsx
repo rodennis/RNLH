@@ -1,39 +1,63 @@
 import React from 'react'
 import './Nav.css'
 import{Link} from 'react-router-dom'
+import {useState} from 'react'
 import logo from '../../photos/background.png'
-const authenticatedOptions = (
-  <>
-      <Link className="link link-tags" to="/add-product">Add Product</Link>
-      <Link className="link link-tags" to="/sign-out">Sign Out</Link>
-  </>
-)
-const unauthenticatedOptions = (
-  <>
-      <Link className='link link-tags' to='/sign-in'>Sign In</Link>
-      <Link className='link link-tags' to='/sign-up'>Sign Up</Link>
-  </>
-)
-const alwaysOptions = (
-  <>
-      <Link className='link link-tags move-right' to='/products'>Products</Link>
-  </>
-)
+import hamburger from '../../photos/hamburger.png'
 
 const Nav = ({user}) => {
+
+  const [toggle, setToggle] = useState(false)
+  const [newToggle, setNewToggle] = useState(false)
+
+  const handleClick = () => {
+    setToggle(prevToggle => !prevToggle)
+  }
+
+  const handleToggleClick = () => {
+setNewToggle(prevToggle => !prevToggle)
+  }
+
+  const authenticatedOptions = (
+    <>
+        <Link className="link link-tags" to="/add-product">Add Product</Link>
+        <Link className="link link-tags" to="/sign-out">Sign Out</Link>
+    </>
+  )
+  const unauthenticatedOptions = (
+    <>
+        <Link className='link link-tags' to='/sign-in'>Sign In</Link>
+        <Link className='link link-tags' to='/sign-up'>Sign Up</Link>
+    </>
+  )
+  const alwaysOptions = (
+    <>
+        <Link onClick={handleToggleClick} className='link link-tags move-right' to='/products'>Products</Link>
+    </>
+  )
+
   return (
+    <div>
     <nav className='navbar'>
       <div className={user ? 'user-display' : 'left-side'}>
-        {user && <div className="welcome">Welcome, {user.username}</div>}
+      {user && <div className="welcome">Welcome, {user.username}</div>}
         <Link to='/'>
         <img className='logo' src={logo} alt="" />
         </Link>
       </div>
       <div className='right-side'>
+      <div className='fullscreen-links-div'>
           {alwaysOptions}
           {user ? authenticatedOptions : unauthenticatedOptions}
-      </div>
+        </div>
+        <button onClick={handleClick} className='hamburger-menu'><img src={hamburger} alt="" /></button>
+        <div className='hamburger-links-div' style={{ display: toggle === false ? 'none': 'block'}}>
+          {alwaysOptions}
+          {user ? authenticatedOptions : unauthenticatedOptions}
+        </div>
+      </div> 
     </nav>
+    </div>
   )
 }
 

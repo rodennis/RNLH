@@ -92,4 +92,19 @@
   flex-direction: column;
   margin-top: 40px;
   margin-bottom: 40px;
+
 }
+
+.details-img {
+  flex: 1;
+}
+
+.details-img img {
+  width: 500px;
+}
+
+.details-info {
+  flex: 1;
+
+}
+
