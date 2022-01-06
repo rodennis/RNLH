@@ -11,7 +11,7 @@
   box-shadow: 8px 8px 4px rgba(0, 0, 0, 0.25);
   border-top-left-radius: 8px;
   border-top-right-radius: 8px;
-}
+width: 500px;}
 
 .details-img {
   flex: 1;
@@ -19,7 +19,7 @@
 }
 
 .details-img img {
-  width: 500px;
+  width: 300px;
 }
 
 .details-info {
