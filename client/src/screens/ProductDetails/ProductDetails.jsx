@@ -30,12 +30,12 @@ export default function ProductDetails(props) {
     <Layout user={props.user}>
       {ProductDetails && (
         <div>
+          <div className="product-details">
+            <div className="details-img">
           <div className="product-details-name">
             <p>{ProductDetails.name}</p>
           </div>
-          <div className="product-details">
-            <div className="details-img">
-              <img src={ProductDetails.imgURL} alt="" />
+              <img className='details-images' src={ProductDetails.imgURL} alt="" />
             </div>
 
             <div className="details-info">
