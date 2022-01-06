@@ -29,7 +29,7 @@ function Home(props) {
           />
         </div>
       </div>
-      {props.products.imgURL && (
+      {props.products[0].imgURL && (
         <div>
           <h1 className="car-header">Featured Products</h1>
 
