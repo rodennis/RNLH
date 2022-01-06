@@ -2,6 +2,99 @@
   display: flex;
 }
 
+.product-details-name {
+  flex: 1;
+  width: 40%;
+  background-color: #83c5be;
+  line-height: 60px;
+  font-size: 30px;
+  box-shadow: 8px 8px 4px rgba(0, 0, 0, 0.25);
+  border-top-left-radius: 8px;
+  border-top-right-radius: 8px;
+}
+
+.details-img {
+  flex: 1;
+  margin-top: 40px;
+}
+
+.details-img img {
+  width: 500px;
+}
+
+.details-info {
+  flex: 1;
+  margin-top: 40px;
+}
+
+.edit-delete {
+  background-color: #83c5be;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  width: 50%;
+  line-height: 15px;
+  font-size: 15px;
+  box-shadow: 8px 8px 4px rgba(0, 0, 0, 0.25);
+  border-top-left-radius: 8px;
+  border-top-right-radius: 8px;
+}
+
+.all-deets {
+  background-color: #83c5be;
+  box-shadow: 8px 8px 4px rgba(0, 0, 0, 0.25);
+  margin-top: 10px;
+  display: flex;
+  align-items: baseline;
+  flex-direction: column;
+}
+
+/* .class_1.class_2{
+  some styles 
+  display: flex; 
+  */
+
+.buttons-ed {
+  display: flex;
+  width: 50%;
+}
+
+.buttons-e {
+  background-color: #83c5be;
+  width: 40%;
+  margin-left: 10%;
+  line-height: 40px;
+  font-size: 22px;
+  box-shadow: 8px 8px 4px rgba(0, 0, 0, 0.25);
+  border-top-left-radius: 8px;
+  border-top-right-radius: 8px;
+  border: none;
+}
+
+.buttons-d {
+  background-color: #83c5be;
+  width: 40%;
+  margin-left: 10%;
+  line-height: 50px;
+  font-size: 22px;
+  box-shadow: 8px 8px 4px rgba(0, 0, 0, 0.25);
+  border-top-left-radius: 8px;
+  border-top-right-radius: 8px;
+  border: none;
+}
+
+.top-head-deets {
+  display: flex;
+}
+
+.details-subhead {
+  display: flex;
+  flex-direction: column;
+  margin-top: 40px;
+  margin-bottom: 40px;
+
+}
+
 .details-img {
   flex: 1;
 }
@@ -12,5 +105,6 @@
 
 .details-info {
   flex: 1;
+
 }
 
