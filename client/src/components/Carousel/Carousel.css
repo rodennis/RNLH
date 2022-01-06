@@ -50,3 +50,20 @@
   background: none;
   border: none;
 }
+@media only screen and (max-width: 480px) {
+  .carousel {
+    max-width: 410px;
+    height: 250px;
+  }
+  .next {
+    left: 210px;
+    bottom: 135px;
+  }
+  .prev {
+    right: 200px;
+    bottom: 135px;
+  }
+  .carousel-item {
+    height: 250px;
+  }
+}

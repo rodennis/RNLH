@@ -36,91 +36,91 @@ function Home(props) {
             {" "}
             <div className="main-container-items">
               <img
-                src="https://di2ponv0v5otw.cloudfront.net/posts/2021/12/11/61b4fb04efd0e41a9cccd520/m_wp_61b4fb0b3a0db9c12a41c8de.webp"
-                alt="Amiri Jeans"
+                src={props.products[2].imgURL}
+                alt={props.products[2].name}
                 className="car-items"
               />
-              <h4 className="item-names">Amiri Jeans</h4>
+              <h4 className="item-names">{props.products[2].name}</h4>
             </div>
             <div className="main-container-items">
               <img
-                src="https://i.ebayimg.com/images/g/Uy0AAOSwZK5gk38W/s-l1600.jpg"
-                alt="Canada Goose Jacket"
+                src={props.products[0].imgURL}
+                alt={props.products[0].name}
                 className="car-items"
               />
-              <h4 className="item-names">Canada Goose Jacket</h4>
+              <h4 className="item-names">{props.products[0].name}</h4>
             </div>
             <div className="main-container-items">
               <img
-                src="https://encrypted-tbn3.gstatic.com/shopping?q=tbn:ANd9GcTVUnG-JPjrBa2px-pHnmbD6CTp02N3BaVVykqTx76qZmBxOrIVL5B5f-COLJ7kXL5-bUGGM03ThEl5dpFFFfKTt0P3cPOqE8jL5C2MLzE&usqp=CAY"
-                alt="Gucci Belt"
+                src={props.products[8].imgURL}
+                alt={props.products[8].name}
                 className="car-items"
               />
-              <h4 className="item-names">Gucci Belt</h4>
+              <h4 className="item-names">{props.products[8].name}</h4>
             </div>
-            <div className="main-container-items">
+            <div className="main-container-items media">
               <img
-                src="https://encrypted-tbn1.gstatic.com/shopping?q=tbn:ANd9GcQL9xtkwO2zzQAzBsfeU8wJmZWITt_DYh1ygILtgmYA3s9Sgbh8YwcndaHuO-gnHbrtoXZm7yUYY1drgbVMARK4uPiN6gtzeT6CGg_2YYRUAwbRUolREpMsYw&usqp=CAY"
-                alt="Monopoly"
+                src={props.products[15].imgURL}
+                alt={props.products[15].name}
                 className="car-items"
               />
-              <h4 className="item-names">Monopoly</h4>
-            </div>
-          </CarouselItem>
-          <CarouselItem>
-            <div className="main-container-items">
-              <img
-                src="https://encrypted-tbn1.gstatic.com/shopping?q=tbn:ANd9GcSzHUm9rqAU_YtnUi0oVMBQnwtmW_AI5XrZnqZw0qoprT2L1-i4dTwBmLl0sK5seyF5Be1bF5hBMEN3gzvElBh7hpeYcTMw0-Sou6BqYVT56goj1aXa9HO9&usqp=CAY"
-                alt="Trouble"
-                className="car-items"
-              />
-              <h4 className="item-names">Trouble</h4>
-            </div>
-            <div className="main-container-items">
-              <img
-                src="https://cdn.cnn.com/cnnnext/dam/assets/211025072623-macbook-pro-14-display-5.jpg"
-                alt="2021 Macbook Pro"
-                className="car-items"
-              />
-              <h4 className="item-names">2021 Macbook Pro</h4>
-            </div>
-            <div className="main-container-items">
-              <img
-                src="https://assets-prd.ignimgs.com/2020/10/23/image-from-ios-1603470363376.jpg"
-                alt="Playstation 5"
-                className="car-items"
-              />
-              <h4 className="item-names">Playstation 5</h4>
-            </div>
-            <div className="main-container-items">
-              <img
-                src="https://i5.walmartimages.com/asr/8ebe9728-7f18-4fa9-a40d-9353a9104161.d5ae8243e11742647fa73fb19f541242.jpeg?odnHeight=612&odnWidth=612&odnBg=FFFFFF"
-                alt="Green Velvet Couch"
-                className="car-items"
-              />
-              <h4 className="item-names">Green Velvet Couch</h4>
+              <h4 className="item-names">{props.products[15].name}</h4>
             </div>
           </CarouselItem>
           <CarouselItem>
             <div className="main-container-items">
               <img
-                src="https://img1.homary.com/filters:format(webp)/mall/file/2021/12/04/0cd962361d574ab0b942344c51aa255e.jpg"
-                alt="Dining Table"
+                src={props.products[18].imgURL}
+                alt={props.products[18].name}
                 className="car-items"
               />
-              <h4 className="item-names">Dining Table</h4>
+              <h4 className="item-names">{props.products[18].name}</h4>
             </div>
             <div className="main-container-items">
               <img
-                src="https://i.gyazo.com/62fcc3c8c0cfbd675e4f98f74483393f.jpg"
-                alt="2011 Argo Avenger 750 EFI"
+                src={props.products[21].imgURL}
+                alt={props.products[21].name}
                 className="car-items"
               />
-              <h4 className="item-names">2011 Argo Avenger 750 EFI</h4>
+              <h4 className="item-names">{props.products[21].name}</h4>
             </div>
             <div className="main-container-items">
               <img
-                src="https://i.gyazo.com/c8952c15c80c5f4fda2118aaec9af751.jpg"
+                src={props.products[22].imgURL}
+                alt={props.products[22].name}
+                className="car-items"
+              />
+              <h4 className="item-names">{props.products[22].name}</h4>
+            </div>
+            <div className="main-container-items media">
+              <img
+                src={props.products[32].imgURL}
+                alt={props.products[32].name}
+                className="car-items"
+              />
+              <h4 className="item-names">{props.products[32].name}</h4>
+            </div>
+          </CarouselItem>
+          <CarouselItem>
+            <div className="main-container-items">
+              <img
+                src={props.products[31].imgURL}
+                alt={props.products[31].name}
+                className="car-items"
+              />
+              <h4 className="item-names">{props.products[31].name}</h4>
+            </div>
+            <div className="main-container-items">
+              <img
+                src={props.products[45].imgURL}
+                alt={props.products[45].name}
+                className="car-items"
+              />
+              <h4 className="item-names">{props.products[45].name}</h4>
+            </div>
+            <div className="main-container-items media">
+              <img
+                src={props.products[47].imgURL}
                 alt="2018 GMC Sierra Denali Pickup"
                 className="car-items-1"
               />
@@ -131,11 +131,11 @@ function Home(props) {
             </div>
             <div className="main-container-items">
               <img
-                src="https://miro.medium.com/max/1400/1*sDpzeFIuCbWUa6f_7JAtxg.png"
-                alt="iPhone 13 Pro Max"
+                src={props.products[27].imgURL}
+                alt={props.products[27].name}
                 className="car-items"
               />
-              <h4 className="item-names">iPhone 13 Pro Max</h4>
+              <h4 className="item-names">{props.products[27].name}</h4>
             </div>
           </CarouselItem>
         </Carousel>

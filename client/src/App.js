@@ -52,7 +52,7 @@ function App() {
     <div className="App">
       <Nav user={user}/>
       <Routes>
-        <Route path={'/'} element={<Home />}/> 
+        <Route path={'/'} element={<Home products={products} />}/> 
         <Route path={'/products'} element={<Products products={products} />}/> 
         <Route path={'/products/:id'} element={<ProductDetails user={user} products={products}/>} />
         <Route path={'/products/:id/edit'} element={user ? <EditProducts user={user} setToggle={setToggle}/> : <Navigate to='/sign-up'/>}/>
