@@ -54,7 +54,7 @@ function App() {
       <Routes>
         <Route path={'/'} element={<Home />}/> 
         <Route path={'/products'} element={<Products products={products} />}/> 
-        <Route path={'/products/:id'} element={<ProductDetails user={user} products={products}/>} />
+        <Route path={'/products/:id'} element={<ProductDetails user={user} products={products} setToggle={setToggle}/> } />
         <Route path={'/products/:id/edit'} element={user ? <EditProducts user={user} setToggle={setToggle}/> : <Navigate to='/sign-up'/>}/>
         <Route path={'/add-product'} element={user ? <AddProducts user={user} setToggle={setToggle}/> : <Navigate to='/sign-up'/>}/>
         <Route path={'/contact'} element={<Contact />}/> 
