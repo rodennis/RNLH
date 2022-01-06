@@ -61,7 +61,7 @@ function SignIn(props) {
   const { email, password } = form;
 
   return (
-    <Layout user={props.user}>
+    <Layout className="layout-signin" user={props.user}>
       <div className="signin-container">
         <div>
           <div className="header-signin">
