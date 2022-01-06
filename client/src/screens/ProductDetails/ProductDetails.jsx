@@ -30,12 +30,12 @@ export default function ProductDetails(props) {
     <Layout user={props.user}>
       {ProductDetails && (
         <div>
-          <div className="product-details">
-            <div className="details-img">
           <div className="product-details-name">
             <p>{ProductDetails.name}</p>
           </div>
-              <img className='details-images' src={ProductDetails.imgURL} alt="" />
+          <div className="product-details">
+            <div className="details-img">
+              <img className='details-image' src={ProductDetails.imgURL} alt="" />
             </div>
 
             <div className="details-info">
@@ -57,22 +57,19 @@ export default function ProductDetails(props) {
               <div className="all-deets">
                 <br />
 
-                <h2 className="details-subhead">Condition:</h2>
-                <span className="details-cond">{ProductDetails.condition}</span>
+                <h4 className="details-subhead">Condition: <span className="details-cond">{ProductDetails.condition}</span></h4>
 
                 <br />
 
-                <h2 className="details-subheader1">Item Name:</h2>
-                <span className="details-name">{ProductDetails.name}</span>
+                <h4 className="details-subheader">Item Name: <span className="details-name">{ProductDetails.name}</span></h4>
+                <br />
+
+                <h4 className="details-subheader">Price:                 <span className="details-price">{ProductDetails.price}</span>
+</h4>
 
                 <br />
 
-                <h2 className="details-subheader2">Price:</h2>
-                <span className="details-price">{ProductDetails.price}</span>
-
-                <br />
-
-                <h2 className="details-subheader3">Description:</h2>
+                <h4 className="details-subheader">Description:</h4>
                 <span className="details-desc">
                   {ProductDetails.description}
                 </span>
@@ -83,6 +80,7 @@ export default function ProductDetails(props) {
           </div>
         </div>
       )}
+
     </Layout>
   );
 }

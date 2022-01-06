@@ -140,6 +140,7 @@ function Home(props) {
                 />
                 <h4 className="item-names">{props.products[32]?.name}</h4>
               </Link>
+
             </div>
           </CarouselItem>
           <CarouselItem>
