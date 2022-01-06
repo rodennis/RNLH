@@ -76,4 +76,7 @@ body {
   .signin-label {
     font-size: 22px;
   }
+  .layout {
+    align-items: center;
+  }
 }
