@@ -1,3 +1,4 @@
+/* Mac/Desktop */
 .product-details {
   display: flex;
 }
@@ -11,7 +12,6 @@
   box-shadow: 8px 8px 4px rgba(0, 0, 0, 0.25);
   border-top-left-radius: 8px;
   border-top-right-radius: 8px;
-
   margin-left: 830px;
 }
 
@@ -53,11 +53,38 @@
   background-color: #83c5be;
   box-shadow: 8px 8px 4px rgba(0, 0, 0, 0.25);
   margin-top: 10px;
-  display: flex;
-  align-items: baseline;
-  flex-direction: column;
   padding-left: 7%;
   padding-right: 7%;
+  display: grid;
+  grid-template-rows: 2fr, 1fr;
+  grid-template-columns: 1fr, 1fr, 2fr;
+  grid-template-areas:
+    "L R"
+    "L R"
+    "D D";
+}
+.detail-headers {
+  grid-area: "L";
+  font-size: 20px;
+  text-align: left;
+}
+.detail-values {
+  grid-area: "R";
+  text-align: left;
+  color: white;
+  margin-left: -100px;
+  font-size: 17px;
+}
+.detail-values span {
+  display: inline-block;
+  margin-top: 30px;
+}
+.detail-descriptions {
+  grid-area: "D";
+  grid-column: 1 / 3;
+  text-align: left;
+  font-size: 17px;
+  padding-bottom: 35px;
 }
 
 .buttons-ed {
@@ -91,22 +118,8 @@
   display: flex;
 }
 
-.details-subhead {
-  margin-top: 40px;
-  margin-bottom: 40px;
-  display: inline;
-}
-
-.details-img {
-  flex: 1;
-}
-
 .details-img img {
   width: 500px;
-}
-
-.details-info {
-  flex: 1;
 }
 
 .edit-link {
@@ -121,38 +134,6 @@
   border: none;
 }
 
-.details-desc {
-  margin-bottom: 85px;
-  font-weight: 400;
-  font-family: "Montserrat", sans-serif;
-  font-size: 18px;
-  color: white;
-}
-
-.details-name {
-  padding-left: 50px;
-  font-weight: 400;
-  font-family: "Montserrat", sans-serif;
-  font-size: 18px;
-  color: white;
-}
-
-.details-price {
-  padding-left: 105px;
-  font-weight: 400;
-  font-family: "Montserrat", sans-serif;
-  font-size: 18px;
-  color: white;
-}
-
-.details-cond {
-  padding-left: 60px;
-  font-weight: 400;
-  font-size: 18px;
-  font-family: "Montserrat", sans-serif;
-  color: white;
-}
-
 .details-location {
   font-weight: 400;
   font-size: 19px;
@@ -160,14 +141,12 @@
   color: white;
 }
 
-.details-subheader {
+.details-subheader-loc {
+  padding-left: 7%;
   font-size: 20px;
 }
 
-.details-subheader-loc {
-  padding-left: 7%;
-}
-
+/* Mobile */
 @media only screen and (max-width: 480px) {
   .product-details {
     display: flex;
@@ -180,7 +159,7 @@
   }
   .product-details-name {
     margin-left: 0px;
-    font-size: 18px;
+    font-size: 22px;
     width: 300px;
     margin-top: 40px;
   }
@@ -199,8 +178,11 @@
   .all-deets {
     margin-top: 15px;
   }
-  .item-name-subhead {
-    display: flex;
-    flex-wrap: wrap;
+  .detail-values {
+    margin-left: -75px;
+  }
+  .details-location {
+    padding-right: 5px;
+    padding-left: 5px;
   }
 }

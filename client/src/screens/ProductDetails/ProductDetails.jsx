@@ -64,39 +64,27 @@ export default function ProductDetails(props) {
               </div>
 
               <div className="all-deets">
-                <div></div>
-                <div></div>
-                <div></div>
-                <br />
-
-                <h4 className="details-subheader">
-                  Condition:{" "}
-                  <span className="details-cond">
-                    {ProductDetails.condition}
-                  </span>
-                </h4>
-
-                <br />
-
-                <div className="item-name-subhead">
-                  <h4 className="details-subheader">Item Name: </h4>
-                  <span className="details-name">{ProductDetails.name}</span>
+                <div className="detail-headers">
+                  <h4>Condition: </h4>
+                  <h4>Item Name: </h4>
+                  <h4>Price: </h4>
                 </div>
 
-                <br />
-                <h4 className="details-subheader">
-                  Price:{" "}
-                  <span className="details-price">{ProductDetails.price}</span>
-                </h4>
+                <div className="detail-values">
+                  <span>{ProductDetails.condition}</span>
+                  <br />
+                  <span>{ProductDetails.name}</span>
+                  <br />
+                  <span>{ProductDetails.price}</span>
+                  <br />
+                </div>
 
-                <br />
-
-                <h4 className="details-subheader">Description:</h4>
-                <span className="details-desc">
-                  {ProductDetails.description}
-                </span>
-
-                <br />
+                <div className="detail-descriptions">
+                  <h4 style={{ fontSize: "19.5px" }}>Description:</h4>
+                  <span style={{ color: "white" }}>
+                    {ProductDetails.description}
+                  </span>
+                </div>
               </div>
             </div>
           </div>
