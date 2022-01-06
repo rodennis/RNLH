@@ -11,12 +11,13 @@
   box-shadow: 8px 8px 4px rgba(0, 0, 0, 0.25);
   border-top-left-radius: 8px;
   border-top-right-radius: 8px;
-  
+
   margin-left: 830px;
 }
 
 .product-details-name p {
   margin: 0px;
+  color: white;
 }
 
 .details-img {
@@ -55,12 +56,9 @@
   display: flex;
   align-items: baseline;
   flex-direction: column;
+  padding-left: 7%;
+  padding-right: 7%;
 }
-
-/* .class_1.class_2{
-  some styles 
-  display: flex; 
-  */
 
 .buttons-ed {
   display: flex;
@@ -68,7 +66,7 @@
 }
 
 .buttons-e {
-  background-color: #006D77;
+  background-color: #006d77;
   line-height: 40px;
   font-size: 22px;
   border: none;
@@ -77,7 +75,7 @@
 }
 
 .buttons-d {
-  background-color: #006D77;
+  background-color: #006d77;
   width: 40%;
   margin-left: 10%;
   line-height: 50px;
@@ -109,11 +107,10 @@
 
 .details-info {
   flex: 1;
-
 }
 
 .edit-link {
-  background-color: #006D77;
+  background-color: #006d77;
   width: 40%;
   margin-left: 10%;
   line-height: 40px;
@@ -126,17 +123,84 @@
 
 .details-desc {
   margin-bottom: 85px;
+  font-weight: 400;
+  font-family: "Montserrat", sans-serif;
+  font-size: 18px;
+  color: white;
 }
 
 .details-name {
   padding-left: 50px;
+  font-weight: 400;
+  font-family: "Montserrat", sans-serif;
+  font-size: 18px;
+  color: white;
 }
 
 .details-price {
-  padding-left: 95px;
+  padding-left: 105px;
+  font-weight: 400;
+  font-family: "Montserrat", sans-serif;
+  font-size: 18px;
+  color: white;
 }
 
 .details-cond {
   padding-left: 60px;
+  font-weight: 400;
+  font-size: 18px;
+  font-family: "Montserrat", sans-serif;
+  color: white;
 }
 
+.details-location {
+  font-weight: 400;
+  font-size: 19px;
+  font-family: "Montserrat", sans-serif;
+  color: white;
+}
+
+.details-subheader {
+  font-size: 20px;
+}
+
+.details-subheader-loc {
+  padding-left: 7%;
+}
+
+@media only screen and (max-width: 480px) {
+  .product-details {
+    display: flex;
+    flex-direction: column;
+  }
+  .products-detail-main {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+  }
+  .product-details-name {
+    margin-left: 0px;
+    font-size: 18px;
+    width: 300px;
+    margin-top: 40px;
+  }
+  .details-image {
+    max-width: 400px;
+    height: auto;
+    border-radius: 10px;
+  }
+  .buttons-e {
+    padding-left: 3px;
+    padding-top: 9px;
+  }
+  .product-details {
+    margin-bottom: 40px;
+  }
+  .all-deets {
+    margin-top: 15px;
+  }
+  .item-name-subhead {
+    display: flex;
+    flex-wrap: wrap;
+  }
+}
