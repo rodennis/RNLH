@@ -39,7 +39,6 @@ function App() {
     const response = async () => {
       try {
         const res = await getProducts('/products')
-        console.log(res)
       setProducts(res)
       } catch (error) {
         console.log(error)
@@ -53,9 +52,9 @@ function App() {
     <div className="App">
       <Nav user={user}/>
       <Routes>
-        <Route path={'/'} element={<Home />}/> 
+        <Route path={'/'} element={<Home products={products} />}/> 
         <Route path={'/products'} element={<Products products={products} />}/> 
-        <Route path={'/products/:id'} element={<ProductDetails user={user} products={products}/>} />
+        <Route path={'/products/:id'} element={<ProductDetails user={user} products={products} setToggle={setToggle}/> } />
         <Route path={'/products/:id/edit'} element={user ? <EditProducts user={user} setToggle={setToggle}/> : <Navigate to='/sign-up'/>}/>
         <Route path={'/add-product'} element={user ? <AddProducts user={user} setToggle={setToggle}/> : <Navigate to='/sign-up'/>}/>
         <Route path={'/contact'} element={<Contact />}/> 

@@ -1,9 +1,6 @@
 import React from 'react'
 import ProductCards from '../../components/ProductCards/ProductCards'
 import Layout from '../../components/Layout/Layout'
-import './Products.css'
-
-
 
 function Products({products}, props) {
 

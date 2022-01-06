@@ -46,3 +46,68 @@
     font-family: 'italiana';
     letter-spacing: 1px;
 }
+
+.hamburger-menu {
+    display: none;
+}
+
+.hidden {
+    display: none;
+}
+
+@media (max-width: 480px) {
+    .logo {
+        width: 200px;
+        padding-top: 13px;
+        padding-left: 140px;
+    }
+
+    .welcome {
+        display: none;
+    }
+
+    .right-side {
+        padding-top: 18px;
+    }
+
+    .hamburger-menu {
+        display: block;
+        background: none;
+        border: none;
+        padding-left: 80px;
+      
+    }
+
+    .hamburger-menu img {
+        width: 40px;
+    }
+
+    .hamburger-links-div {
+        background-color: #006d77;
+        height: 200px;
+        z-index:100; 
+        position: relative;
+        margin-top: 15px;
+        border-bottom-left-radius: 10px;
+    }
+    
+
+    .fullscreen-links-div {
+        display: none;
+    }
+
+    .link-tags {
+        display: block;
+        padding: 0px;
+        padding-top: 30px;
+        color: white;
+    }
+
+    .hidden {
+        display: none;
+    }
+
+    .show {
+        display: block
+    }
+}

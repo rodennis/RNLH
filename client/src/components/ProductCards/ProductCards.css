@@ -6,7 +6,7 @@
 .product-card-div img{
     width: 300px;
     height: 217px;
-
+    margin-bottom: 20px;
     box-shadow: rgba(0, 0, 0, 0.5) 3.95px 3.95px 2.6px;
 }
 
@@ -32,4 +32,18 @@ h6 {
 .all-products {
     display: flex;
     flex-wrap: wrap;
+}
+
+@media (max-width: 480px) {
+    .all-products {
+        margin: auto;
+        right: 0px;
+        left: 0px;
+    }
+
+    .layout {
+        align-items: center;
+    }
+
+
 }

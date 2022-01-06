@@ -1,9 +1,11 @@
 import { useEffect, useState } from "react";
-import { useParams } from "react-router-dom";
+import { useParams, Link, useNavigate } from "react-router-dom";
 import Layout from "../../components/Layout/Layout";
 import "./ProductDetails.css";
+import { deleteProduct } from "../../services/products";
 
 export default function ProductDetails(props) {
+  const navigate = useNavigate();
   const [ProductDetails, setProductDetails] = useState({});
   const params = useParams();
 
@@ -14,44 +16,80 @@ export default function ProductDetails(props) {
     setProductDetails(foundProductDetails);
   }, [params.id, props.products]);
 
+  const handleDelete = () => {
+    deleteProduct(ProductDetails._id);
+    navigate("/products");
+    props.setToggle((prevToggle) => !prevToggle);
+  };
+
   return (
     <Layout user={props.user}>
-      <div className="productDetails">
-        {ProductDetails && (
-          <div>
-            <p className="big-name">{ProductDetails.name}</p>
-            <br />
-            <p className="imgURL">{ProductDetails.imgURL}</p>
-            <br />
-            <h3 className="location-tag">Location:</h3>
-            <p className="location">{ProductDetails.location}</p>
-            <br />
-            <div className="condition-tag">
-              <h2 className="details-subheader">Condition:</h2>
-              <p className="details-info">{ProductDetails.condition}</p>
-            </div>
-            <br />
-            <h2 className="details-subheader">Item Name:</h2>
-            <p className="details-info">{ProductDetails.name}</p>
-            <br />
-            <h2 className="details-subheader">Price:</h2>
-            <p className="details-info">{ProductDetails.price}</p>
-            <br />
-            <h2 className="details-subheader">Description:</h2>
-            <p className="details-info">{ProductDetails.description}</p>
-            <br />
-            {/* <div>
-              <b className="commentsTag">Comments</b>
-              <br />
-              <div className="comments">
-                <p>What kind of graphics card does it have?</p>
-                <p>I'm Interested!</p>
-                <p>Hey is this available?</p>
-              </div>
-            </div> */}
+      {ProductDetails && (
+        <div className="products-detail-main">
+          <div className="product-details-name">
+            <p>{ProductDetails.name}</p>
           </div>
-        )}
-      </div>
+          <div className="product-details">
+            <div className="details-img">
+              <img
+                className="details-image"
+                src={ProductDetails.imgURL}
+                alt=""
+              />
+            </div>
+
+            <div className="details-info">
+              <div className="top-head-deets">
+                <div className="edit-delete">
+                  <h3 className="details-subheader-loc">Location:</h3>
+                  <p className="details-location">{ProductDetails.location}</p>
+                </div>
+                <div className="buttons-ed">
+                  <Link
+                    className="edit-link"
+                    to={`/products/${ProductDetails._id}/edit`}
+                  >
+                    <button className="buttons-e" style={{ color: "white" }}>
+                      Edit
+                    </button>
+                  </Link>
+                  <button
+                    onClick={handleDelete}
+                    className="buttons-d"
+                    style={{ color: "white" }}
+                  >
+                    Delete
+                  </button>
+                </div>
+              </div>
+
+              <div className="all-deets">
+                <div className="detail-headers">
+                  <h4>Condition: </h4>
+                  <h4>Item Name: </h4>
+                  <h4>Price: </h4>
+                </div>
+
+                <div className="detail-values">
+                  <span>{ProductDetails.condition}</span>
+                  <br />
+                  <span>{ProductDetails.name}</span>
+                  <br />
+                  <span>{ProductDetails.price}</span>
+                  <br />
+                </div>
+
+                <div className="detail-descriptions">
+                  <h4 style={{ fontSize: "19.5px" }}>Description:</h4>
+                  <span style={{ color: "white" }}>
+                    {ProductDetails.description}
+                  </span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      )}
     </Layout>
   );
 }
