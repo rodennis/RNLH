@@ -37,7 +37,7 @@ function Home(props) {
             {" "}
             <div className="main-container-items">
               <Link
-                to={`/products/${props.products[2]._id}`}
+                to={`/products/${props.products[2]?._id}`}
                 style={{ textDecoration: "none", color: "white" }}
               >
                 <img
@@ -50,7 +50,7 @@ function Home(props) {
             </div>
             <div className="main-container-items">
               <Link
-                to={`/products/${props.products[0]._id}`}
+                to={`/products/${props.products[0]?._id}`}
                 style={{ textDecoration: "none", color: "white" }}
               >
                 <img
@@ -63,7 +63,7 @@ function Home(props) {
             </div>
             <div className="main-container-items">
               <Link
-                to={`/products/${props.products[8]._id}`}
+                to={`/products/${props.products[8]?._id}`}
                 style={{ textDecoration: "none", color: "white" }}
               >
                 <img
@@ -76,7 +76,7 @@ function Home(props) {
             </div>
             <div className="main-container-items media">
               <Link
-                to={`/products/${props.products[15]._id}`}
+                to={`/products/${props.products[15]?._id}`}
                 style={{ textDecoration: "none", color: "white" }}
               >
                 <img
@@ -91,7 +91,7 @@ function Home(props) {
           <CarouselItem>
             <div className="main-container-items">
               <Link
-                to={`/products/${props.products[18]._id}`}
+                to={`/products/${props.products[18]?._id}`}
                 style={{ textDecoration: "none", color: "white" }}
               >
                 <img
@@ -104,7 +104,7 @@ function Home(props) {
             </div>
             <div className="main-container-items">
               <Link
-                to={`/products/${props.products[21]._id}`}
+                to={`/products/${props.products[21]?._id}`}
                 style={{ textDecoration: "none", color: "white" }}
               >
                 <img
@@ -117,7 +117,7 @@ function Home(props) {
             </div>
             <div className="main-container-items">
               <Link
-                to={`/products/${props.products[22]._id}`}
+                to={`/products/${props.products[22]?._id}`}
                 style={{ textDecoration: "none", color: "white" }}
               >
                 <img
@@ -130,7 +130,7 @@ function Home(props) {
             </div>
             <div className="main-container-items media">
               <Link
-                to={`/products/${props.products[32]._id}`}
+                to={`/products/${props.products[32]?._id}`}
                 style={{ textDecoration: "none", color: "white" }}
               >
                 <img
@@ -145,7 +145,7 @@ function Home(props) {
           <CarouselItem>
             <div className="main-container-items">
               <Link
-                to={`/products/${props.products[31]._id}`}
+                to={`/products/${props.products[31]?._id}`}
                 style={{ textDecoration: "none", color: "white" }}
               >
                 <img
@@ -158,7 +158,7 @@ function Home(props) {
             </div>
             <div className="main-container-items">
               <Link
-                to={`/products/${props.products[45]._id}`}
+                to={`/products/${props.products[45]?._id}`}
                 style={{ textDecoration: "none", color: "white" }}
               >
                 <img
@@ -171,7 +171,7 @@ function Home(props) {
             </div>
             <div className="main-container-items media">
               <Link
-                to={`/products/${props.products[47]._id}`}
+                to={`/products/${props.products[47]?._id}`}
                 style={{ textDecoration: "none", color: "white" }}
               >
                 <img
@@ -187,7 +187,7 @@ function Home(props) {
             </div>
             <div className="main-container-items">
               <Link
-                to={`/products/${props.products[27]._id}`}
+                to={`/products/${props.products[27]?._id}`}
                 style={{ textDecoration: "none", color: "white" }}
               >
                 <img
