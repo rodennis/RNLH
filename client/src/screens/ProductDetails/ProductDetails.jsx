@@ -1,9 +1,12 @@
 import { useEffect, useState } from "react";
-import { useParams } from "react-router-dom";
+import { useParams, Link, useNavigate } from "react-router-dom";
 import Layout from "../../components/Layout/Layout";
 import "./ProductDetails.css";
+import {deleteProduct} from '../../services/products'
 
 export default function ProductDetails(props) {
+
+  const navigate = useNavigate()
   const [ProductDetails, setProductDetails] = useState({});
   const params = useParams();
 
@@ -13,6 +16,15 @@ export default function ProductDetails(props) {
     });
     setProductDetails(foundProductDetails);
   }, [params.id, props.products]);
+
+
+  const handleDelete = () => {
+      deleteProduct(ProductDetails._id)
+      navigate('/products')
+      props.setToggle(prevToggle => !prevToggle)
+  }
+
+
 
   return (
     <Layout user={props.user}>
@@ -33,8 +45,12 @@ export default function ProductDetails(props) {
                   <p className="details-location">{ProductDetails.location}</p>
                 </div>
                 <div className="buttons-ed">
-                  <button className="buttons-e">Edit</button>
-                  <button className="buttons-d">Delete</button>
+                  <Link className="edit-link" to={`/products/${ProductDetails._id}/edit`}>
+                    <button className="buttons-e">
+                      Edit
+                      </button>
+                      </Link>
+                  <button onClick={handleDelete} className="buttons-d">Delete</button>
                 </div>
               </div>
 
