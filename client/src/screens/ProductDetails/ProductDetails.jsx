@@ -31,7 +31,7 @@ export default function ProductDetails(props) {
             <p>{ProductDetails.name}</p>
           </div>
           <div className="product-details-price">
-            <span>{ProductDetails.price}</span>
+            <span>{ProductDetails.price?.includes('$') ? ProductDetails.price : `$${ProductDetails.price}`}</span>
           </div>
           </div>
           <div className="product-details">
@@ -76,9 +76,6 @@ export default function ProductDetails(props) {
                   <br />
                   <span>{ProductDetails.name}</span>
                   <br />
-                  <span>{ProductDetails.price?.includes('$') ? ProductDetails.price : `$${ProductDetails.price}`}</span>
-                  <br />
-
                 </div>
                 <div className="detail-descriptions">
                   <h4 style={{ fontSize: "19.5px" }}>Description:</h4>
