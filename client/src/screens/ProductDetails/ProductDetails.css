@@ -1,7 +1,6 @@
 /* Mac/Desktop */
 .product-details {
   display: flex;
-  padding-right: 80px;
 }
 
 .product-details-name {
@@ -14,6 +13,21 @@
   border-top-left-radius: 8px;
   border-top-right-radius: 8px;
   margin-left: 830px;
+}
+
+.product-details-price {
+  flex: 1;
+  width: 10%;
+  background-color: #83c5be;
+  line-height: 60px;
+  font-size: 20px;
+  box-shadow: 8px 8px 4px rgba(0, 0, 0, 0.25);
+  border-top-left-radius: 8px;
+  border-top-right-radius: 8px;
+  margin-top: 20px;
+  margin-left: 960px;
+  color: white;
+  font-weight: 600;
 }
 
 .product-details-name p {
@@ -30,7 +44,6 @@
   max-width: 700px;
   height: 535px;
   border-radius: 10px;
-  flex: 1;
 }
 
 .details-info {
@@ -55,12 +68,6 @@
   background-color: #83c5be;
   box-shadow: 8px 8px 4px rgba(0, 0, 0, 0.25);
   margin-top: 10px;
-
-  display: flex;
-  align-items: baseline;
-  flex-direction: column;
-  flex: 2;
-
   padding-left: 7%;
   padding-right: 7%;
   display: grid;
@@ -169,6 +176,12 @@
     margin-left: 0px;
     font-size: 22px;
     width: 300px;
+    margin-top: 40px;
+  }
+  .product-details-price {
+    margin-left: 0px;
+    font-size: 22px;
+    width: 150px;
     margin-top: 40px;
   }
   .details-image {

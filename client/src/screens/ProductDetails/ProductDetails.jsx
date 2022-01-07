@@ -29,6 +29,9 @@ export default function ProductDetails(props) {
           <div className="product-details-name">
             <p>{ProductDetails.name}</p>
           </div>
+          <div className="product-details-price">
+            <span>{ProductDetails.price}</span>
+          </div>
           <div className="product-details">
             <div className="details-img">
               <img
@@ -67,7 +70,6 @@ export default function ProductDetails(props) {
                 <div className="detail-headers">
                   <h4>Condition: </h4>
                   <h4>Item Name: </h4>
-                  <h4>Price: </h4>
                 </div>
 
                 <div className="detail-values">
@@ -77,6 +79,7 @@ export default function ProductDetails(props) {
                   <br />
                   <span>{ProductDetails.price?.includes('$') ? ProductDetails.price : `$${ProductDetails.price}`}</span>
                   <br />
+
                 </div>
 
                 <div className="detail-descriptions">
