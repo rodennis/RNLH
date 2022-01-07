@@ -1,6 +1,7 @@
 /* Mac/Desktop */
 .product-details {
   display: flex;
+  padding-right: 80px;
 }
 
 .product-details-name {
@@ -25,9 +26,13 @@
   border-top-left-radius: 8px;
   border-top-right-radius: 8px;
   margin-top: 20px;
-  margin-left: 960px;
+  margin-left: 970px;
   color: white;
   font-weight: 600;
+}
+
+.price-name-div {
+  margin-left: -70px;
 }
 
 .product-details-name p {
@@ -173,13 +178,13 @@
     flex-direction: column;
   }
   .product-details-name {
-    margin-left: 0px;
+    margin-left: 70px;
     font-size: 22px;
-    width: 300px;
+    width: 350px;
     margin-top: 40px;
   }
   .product-details-price {
-    margin-left: 0px;
+    margin-left: 170px;
     font-size: 22px;
     width: 150px;
     margin-top: 40px;
@@ -195,6 +200,7 @@
   }
   .product-details {
     margin-bottom: 40px;
+    padding-right: 0px;
   }
   .all-deets {
     margin-top: 15px;

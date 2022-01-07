@@ -26,11 +26,13 @@ export default function ProductDetails(props) {
     <Layout user={props.user}>
       {ProductDetails && (
         <div className="products-detail-main">
+          <div className="price-name-div">
           <div className="product-details-name">
             <p>{ProductDetails.name}</p>
           </div>
           <div className="product-details-price">
             <span>{ProductDetails.price}</span>
+          </div>
           </div>
           <div className="product-details">
             <div className="details-img">
