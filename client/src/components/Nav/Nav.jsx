@@ -1,59 +1,74 @@
-import React from 'react'
-import './Nav.css'
-import{Link} from 'react-router-dom'
-import {useState} from 'react'
-import logo from '../../photos/background.png'
-import hamburger from '../../photos/hamburger.png'
+import React from "react";
+import "./Nav.css";
+import { Link } from "react-router-dom";
+import { useState } from "react";
+import logo from "../../photos/background.png";
+import hamburger from "../../photos/hamburger.png";
 
-const Nav = ({user}) => {
-
-  const [toggle, setToggle] = useState(false)
+const Nav = ({ user }) => {
+  const [toggle, setToggle] = useState(false);
 
   const handleClick = () => {
-    setToggle(prevToggle => !prevToggle)
-  }
+    setToggle((prevToggle) => !prevToggle);
+  };
 
   const authenticatedOptions = (
     <>
-        <Link onClick={toggle} className="link link-tags" to="/add-product">Add Product</Link>
-        <Link onClick={toggle} className="link link-tags" to="/sign-out">Sign Out</Link>
+      <Link onClick={toggle} className="link link-tags" to="/add-product">
+        Add Product
+      </Link>
+      <Link onClick={toggle} className="link link-tags" to="/sign-out">
+        Sign Out
+      </Link>
     </>
-  )
+  );
   const unauthenticatedOptions = (
     <>
-        <Link onClick={toggle} className='link link-tags' to='/sign-in'>Sign In</Link>
-        <Link onClick={toggle} className='link link-tags' to='/sign-up'>Sign Up</Link>
+      <Link onClick={toggle} className="link link-tags" to="/sign-in">
+        Sign In
+      </Link>
+      <Link onClick={toggle} className="link link-tags" to="/sign-up">
+        Sign Up
+      </Link>
     </>
-  )
+  );
   const alwaysOptions = (
     <>
-        <Link onClick={toggle} className='link link-tags move-right' to='/products'>Products</Link>
+      <Link
+        onClick={toggle}
+        className="link link-tags move-right"
+        to="/products"
+      >
+        Products
+      </Link>
     </>
-  )
+  );
 
   return (
     <div>
-    <nav className='navbar'>
-      <div className={user ? 'user-display' : 'left-side'}>
-      {user && <div className="welcome">Welcome, {user.username}</div>}
-        <Link onClick={toggle} to='/'>
-        <img className='logo' src={logo} alt="" />
-        </Link>
-      </div>
-      <div className='right-side'>
-      <div className='fullscreen-links-div'>
-          {alwaysOptions}
-          {user ? authenticatedOptions : unauthenticatedOptions}
+      <nav className="navbar">
+        <div className={user ? "user-display" : "left-side"}>
+          {user && <div className="welcome">Welcome, {user.username}</div>}
+          <Link onClick={toggle} to="/">
+            <img className="logo" src={logo} alt="" />
+          </Link>
         </div>
-        <button onClick={handleClick} className='hamburger-menu'><img src={hamburger} alt="" /></button>
-        <div className= { toggle === false ? 'hidden': 'hamburger-links-div'}>
-          {alwaysOptions}
-          {user ? authenticatedOptions : unauthenticatedOptions}
+        <div className="right-side">
+          <div className="fullscreen-links-div">
+            {alwaysOptions}
+            {user ? authenticatedOptions : unauthenticatedOptions}
+          </div>
+          <button onClick={handleClick} className="hamburger-menu">
+            <img src={hamburger} alt="" />
+          </button>
+          <div className={toggle === false ? "hidden" : "hamburger-links-div"}>
+            {alwaysOptions}
+            {user ? authenticatedOptions : unauthenticatedOptions}
+          </div>
         </div>
-      </div> 
-    </nav>
+      </nav>
     </div>
-  )
-}
+  );
+};
 
-export default Nav
+export default Nav;
