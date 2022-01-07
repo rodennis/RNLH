@@ -1,5 +1,6 @@
 .product-details {
   display: flex;
+  padding-right: 80px;
 }
 
 .product-details-name {
@@ -28,6 +29,7 @@
   max-width: 700px;
   height: 535px;
   border-radius: 10px;
+  flex: 1;
 }
 
 .details-info {
@@ -55,6 +57,7 @@
   display: flex;
   align-items: baseline;
   flex-direction: column;
+  flex: 2;
 }
 
 /* .class_1.class_2{
