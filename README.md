@@ -1,4 +1,4 @@
-# RNLH
+# [RNLH](https://rnlh.netlify.app)
 
 ## Schema
 
@@ -50,3 +50,7 @@ We are a luxurious second hand store. We strive to make it easy to shop for high
 [Github Project Board](https://github.com/rodennis/RNLH/projects/1)
 
 The above link contains a kanban board, containing all of the steps needed to achieve MVP.
+
+## Code Cites
+
+[Carousel](https://medium.com/tinyso/how-to-create-the-responsive-and-swipeable-carousel-slider-component-in-react-99f433364aa0)
