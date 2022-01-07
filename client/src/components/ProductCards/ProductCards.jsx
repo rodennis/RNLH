@@ -17,7 +17,7 @@ function ProductCards({ products }) {
                 : `${product.name.slice(0, 15)}...`}
             </h2>
             <h4>{product.location}</h4>
-            <p>{product.price}</p>
+            <p>{product.price.includes('$') ? product.price : `$${product.price}`}</p>
             </div>
             <img src={product.imgURL} alt="" />
           </Link>
