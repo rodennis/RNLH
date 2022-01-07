@@ -5,9 +5,10 @@ body {
 }
 .signin-container {
   display: flex;
-  flex-direction: column;
+  flex-direction: row;
   font-family: "Montserrat";
   align-items: center;
+  justify-content: space-evenly;
 }
 
 .signin-button {
@@ -59,24 +60,48 @@ body {
   width: 450px;
   font-family: "Montserrat";
   box-shadow: 5px 10px rgba(0, 0, 0, 0.25);
+  margin-left: -50px;
 }
 .header-signin {
   display: flex;
   justify-content: center;
+  margin-left: -50px;
 }
+.helper-main-signin {
+  font-size: 30px;
+}
+.helper-signin-subheader {
+  font-size: 18px;
+}
+
 @media only screen and (max-width: 480px) {
   .signin {
     width: 150px;
   }
   .signin-form {
-    height: 310px;
-    width: 310px;
+    height: 280px;
+    width: 250px;
     margin-bottom: 30px;
   }
   .signin-label {
-    font-size: 22px;
+    font-size: 20px;
   }
   .layout {
     align-items: center;
+  }
+  .helper-signin-subheader {
+    font-size: 12px;
+  }
+  .helper-main-signin {
+    font-size: 18px;
+  }
+  .signin-helper {
+    margin-right: 80px;
+  }
+  .signin-input {
+    padding: 10px 15px;
+  }
+  .signin-button {
+    margin-top: 12px;
   }
 }

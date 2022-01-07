@@ -1,6 +1,6 @@
 import { useState } from "react";
 import { signIn } from "../../services/users";
-import { useNavigate } from "react-router-dom";
+import { useNavigate, Link } from "react-router-dom";
 import "./SignIn.css";
 import Layout from "../../components/Layout/Layout";
 
@@ -63,6 +63,20 @@ function SignIn(props) {
   return (
     <Layout className="layout-signin" user={props.user}>
       <div className="signin-container">
+        <div className="signin-helper">
+          <h3 className="helper-main-signin">Sign in to your account.</h3>
+          <h4 className="helper-signin-subheader">
+            Don't have an account?
+            <br />
+            <br />
+            <Link
+              to="/sign-up"
+              style={{ textDecoration: "none", color: "#006d77" }}
+            >
+              Sign up
+            </Link>{" "}
+          </h4>
+        </div>
         <div>
           <div className="header-signin">
             <h3 className="signin">Sign In</h3>

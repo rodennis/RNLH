@@ -1,6 +1,6 @@
 import { useState } from "react";
 import { signUp } from "../../services/users";
-import { useNavigate } from "react-router-dom";
+import { useNavigate, Link } from "react-router-dom";
 import "./SignUp.css";
 import Layout from "../../components/Layout/Layout";
 
@@ -64,7 +64,22 @@ function SignUp(props) {
   return (
     <Layout user={props.user}>
       <div className="signup-container">
+        <div className="signup-helper">
+          <h3 className="signup-text">Create Account</h3>
+          <h3 className="signup-helper-sub">
+            Do you have an account?
+            <br />
+            <br />
+            <Link
+              to="/sign-in"
+              style={{ textDecoration: "none", color: "#006d77" }}
+            >
+              Sign In
+            </Link>
+          </h3>
+        </div>
         <div>
+          {" "}
           <div className="header-signup">
             <h3 className="signup">Sign Up</h3>
           </div>

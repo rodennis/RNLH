@@ -5,9 +5,10 @@ body {
 }
 .signup-container {
   display: flex;
-  flex-direction: column;
+  flex-direction: row;
   font-family: "Montserrat";
   align-items: center;
+  justify-content: space-evenly;
 }
 
 .signup-button {
@@ -65,14 +66,23 @@ body {
   display: flex;
   justify-content: center;
 }
+
+.signup-text {
+  font-size: 30px;
+  letter-spacing: 2px;
+}
+.signup-helper-sub {
+  font-size: 18px;
+}
 @media only screen and (max-width: 480px) {
   .signup-form {
     height: 320px;
-    width: 310px;
+    width: 270px;
     margin-bottom: 30px;
   }
   .signup-label {
-    font-size: 20px;
+    font-size: 18px;
+    margin-top: 10px;
   }
   .signup-input {
     width: 60%;
@@ -82,5 +92,18 @@ body {
   }
   .signup {
     width: 150px;
+  }
+  .signup-text {
+    font-size: 18px;
+  }
+  .signup-helper-sub {
+    font-size: 15px;
+  }
+  .signup-helper {
+    margin-right: 40px;
+    padding: 15px;
+  }
+  .signup-button {
+    margin-top: 10px;
   }
 }
