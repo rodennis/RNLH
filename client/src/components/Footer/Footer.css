@@ -6,12 +6,14 @@
   justify-content: center;
   width: 100%;
 }
-
-.footer-contact {
-  background-color: #006d77;
-  border: none;
-  border-radius: 10px;
+.contact-link {
   color: white;
-  padding: 20px;
-  font-family: "montserrat";
+  font-family: "Della Respira", serif;
+  font-size: 22px;
+  font-weight: 600;
+  text-decoration: none;
+}
+
+.contact-link:hover {
+  text-decoration: underline;
 }
