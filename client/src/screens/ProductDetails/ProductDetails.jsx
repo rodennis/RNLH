@@ -77,6 +77,9 @@ export default function ProductDetails(props) {
                   <br />
                   <span>{ProductDetails.name}</span>
                   <br />
+                  <span>{ProductDetails.price?.includes('$') ? ProductDetails.price : `$${ProductDetails.price}`}</span>
+                  <br />
+
                 </div>
 
                 <div className="detail-descriptions">
