@@ -40,7 +40,6 @@ export default function ProductDetails(props) {
                 alt=""
               />
             </div>
-
             <div className="details-info">
               <div className="top-head-deets">
                 <div className="edit-delete">
@@ -65,20 +64,17 @@ export default function ProductDetails(props) {
                   </button>
                 </div>
               </div>
-
               <div className="all-deets">
                 <div className="detail-headers">
                   <h4>Condition: </h4>
                   <h4>Item Name: </h4>
                 </div>
-
                 <div className="detail-values">
                   <span>{ProductDetails.condition}</span>
                   <br />
                   <span>{ProductDetails.name}</span>
                   <br />
                 </div>
-
                 <div className="detail-descriptions">
                   <h4 style={{ fontSize: "19.5px" }}>Description:</h4>
                   <span style={{ color: "white" }}>
