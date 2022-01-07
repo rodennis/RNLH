@@ -102,16 +102,6 @@
   box-shadow: 3px 3px 3px rgba(0, 0, 0, 0.25);
 }
 
-/* .create-form select {
-  font-family: "Montserrat", sans-serif;
-  font-weight: 600;
-  text-align: center;
-  padding: 5px;
-  margin-bottom: 30px;
-  width: 315px;
-  color: grey;
-} */
-
 @media only screen and (max-width: 1091px) {
   .sub-create .helper-text {
     margin-top: 140px;

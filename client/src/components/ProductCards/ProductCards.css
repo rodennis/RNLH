@@ -47,20 +47,18 @@ margin: 0px;
 }
 
 .all-products {
-    display: flex;
-    flex-wrap: wrap;
+  display: flex;
+  flex-wrap: wrap;
 }
 
 @media (max-width: 480px) {
-    .all-products {
-        margin: auto;
-        right: 0px;
-        left: 0px;
-    }
+  .all-products {
+    margin: auto;
+    right: 0px;
+    left: 0px;
+  }
 
-    .layout {
-        align-items: center;
-    }
-
-
+  .layout {
+    align-items: center;
+  }
 }

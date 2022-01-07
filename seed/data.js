@@ -212,7 +212,7 @@ const insertData = async () => {
     },
     {
       imgURL: "https://hips.hearstapps.com/hmg-prod.s3.amazonaws.com/images/75-in-tv-1596812234.jpg?crop=0.648xw:0.971xh;0.343xw,0.0244xh&resize=640:*",
-      name: "75in Samsung curved flat screen",
+      name: "75in Samsung Curved Flat Screen",
       condition: "New",
       location: "Ouray, Colorado",
       price: "799",
@@ -220,7 +220,7 @@ const insertData = async () => {
     },
     {
       imgURL: "https://www.cnet.com/a/img/rs2rW-IjIRkYj7AG5WUIZcYu2r0=/1200x675/2020/12/04/949c1344-2da7-416c-a012-1d09148d4aa9/acer-nitro-5-amd-03.jpg",
-      name: "Acer gaming laptop",
+      name: "Acer Gaming Laptop",
       condition: "Used",
       location: "Gatlinburg, Tennessee",
       price: "1200",
@@ -228,7 +228,7 @@ const insertData = async () => {
     },
     {
       imgURL: "https://cdn.vox-cdn.com/thumbor/8fsiW-I6Vm6Od6opw7uVTUBZS80=/1400x788/filters:format(jpeg)/cdn.vox-cdn.com/uploads/chorus_asset/file/13665381/Samsung_2019_Monitors_main_2.jpg",
-      name: "Samsung curved monitor",
+      name: "Samsung Curved Monitor",
       condition: "Used",
       location: "Pensacola, Fl",
       price: "450",
@@ -236,7 +236,7 @@ const insertData = async () => {
     },
     {
       imgURL: "https://miro.medium.com/max/1400/1*sDpzeFIuCbWUa6f_7JAtxg.png",
-      name: "Iphone 13 pro max",
+      name: "iPhone 13 Pro Max",
       condition: "New",
       location: "Navarre, FL",
       price: "1150",
@@ -244,7 +244,7 @@ const insertData = async () => {
     },
     {
       imgURL: "https://i.ebayimg.com/images/g/kmoAAOSwJK5gkru2/s-l640.jpg",
-      name: "GameCub",
+      name: "GameCube",
       condition: "Used",
       location: "Montgomery, Alabama",
       price: "350",
@@ -252,7 +252,7 @@ const insertData = async () => {
     },
     {
       imgURL: "https://techcrunch.com/wp-content/uploads/2019/10/Logitech-MX-Keys-MX-Master-3-10.jpg",
-      name: "Mx master 3",
+      name: "MX Master 3",
       condition: "Used",
       location: "Pensacola, Fl",
       price: "65",
@@ -269,7 +269,7 @@ const insertData = async () => {
 //Home Furniture
     {
       imgURL: "https://img1.homary.com/filters:format(webp)/mall/file/2021/12/04/0cd962361d574ab0b942344c51aa255e.jpg",
-      name: "Dining Table",
+      name: "Dining Table Set",
       condition: "Used",
       location: "San Antonio, TX",
       price: "350",
@@ -382,7 +382,7 @@ const insertData = async () => {
     },
     {
       imgURL: "https://i.gyazo.com/62fcc3c8c0cfbd675e4f98f74483393f.jpg",
-      name: "2011 Argo avenger 750 efi ",
+      name: "2011 Argo Avenger 750 EFI ",
       condition: "$New",
       location: "Oakland, California",
       price: "$15,500",
@@ -414,7 +414,7 @@ const insertData = async () => {
     },
     {
       imgURL: "https://i.gyazo.com/f72ee07762563921a25457336218ce16.jpg",
-      name: "2022 Jeep wagoeer Series 3",
+      name: "2022 Jeep Wagoeer Series 3",
       condition: "New",
       location: "Miami, Florida",
       price: "$91,725",

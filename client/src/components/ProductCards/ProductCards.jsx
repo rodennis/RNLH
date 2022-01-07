@@ -1,9 +1,10 @@
-import React from 'react'
-import './ProductCards.css'
-import {Link} from 'react-router-dom'
+import React from "react";
+import "./ProductCards.css";
+import { Link } from "react-router-dom";
 
-function ProductCards({products}) {
+function ProductCards({ products }) {
   return (
+
     <div className='all-products'>
       {
         products.map(product => (
@@ -11,18 +12,19 @@ function ProductCards({products}) {
           <Link className='link' to={`/products/${product._id}`}>
             <div className='product-card-info'>
             <h2>
-              {product.name.length < 15 ? product.name : `${product.name.slice(0, 15)}...`}
+              {product.name.length < 15
+                ? product.name
+                : `${product.name.slice(0, 15)}...`}
             </h2>
             <h4>{product.location}</h4>
             <p>{product.price}</p>
             </div>
             <img src={product.imgURL} alt="" />
           </Link>
-          </div>
-      ))
-      }
+        </div>
+      ))}
     </div>
-  )
+  );
 }
 
-export default ProductCards
+export default ProductCards;
