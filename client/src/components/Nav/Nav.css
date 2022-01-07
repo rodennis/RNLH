@@ -1,3 +1,5 @@
+@import url("https://fonts.googleapis.com/css2?family=Della+Respira&display=swap");
+
 .navbar {
   background-color: #83c5be;
   height: 80px;
@@ -29,7 +31,7 @@
   color: black;
   padding-left: 30px;
   cursor: pointer;
-  font-family: "italiana";
+  font-family: "Della Respira", serif;
   letter-spacing: 1px;
 }
 
@@ -43,7 +45,7 @@
   text-align: left;
   padding-top: 30px;
   padding-left: 75px;
-  font-family: "italiana";
+  font-family: "Della Respira", serif;
   letter-spacing: 1px;
 }
 
