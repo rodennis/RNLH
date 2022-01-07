@@ -1,6 +1,11 @@
 .product-card-div {
-  margin: auto;
-  height: 400;
+    margin: auto;
+    height: 400;
+    transition: transform .5s;
+}
+
+.product-card-div:hover {
+    transform: scale(1.1);
 }
 
 .product-card-div img {
