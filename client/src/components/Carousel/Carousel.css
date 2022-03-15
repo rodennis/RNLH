@@ -52,16 +52,14 @@
 }
 @media only screen and (max-width: 600px) {
   .carousel {
-    max-width: 410px;
+    width: 100vw;
     height: 250px;
   }
   .next {
-    left: 210px;
-    bottom: 135px;
+    display: none;
   }
   .prev {
-    right: 200px;
-    bottom: 135px;
+    display: none;
   }
   .carousel-item {
     height: 250px;
