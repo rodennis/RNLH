@@ -105,7 +105,8 @@ function EditProducts(props) {
                   required
                   onChange={handleChange}
                 />
-                <button>Edit</button>
+                <button disabled>Edit</button>
+                <h6>Button disabled, for viewing only.</h6>
               </form>
             </div>
           </div>

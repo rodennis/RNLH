@@ -57,11 +57,10 @@
   display: none;
 }
 
-@media (max-width: 480px) {
+@media (max-width: 600px) {
   .logo {
     width: 200px;
     padding-top: 13px;
-    padding-left: 140px;
   }
 
   .welcome {

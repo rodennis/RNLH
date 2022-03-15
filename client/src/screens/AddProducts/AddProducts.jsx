@@ -93,7 +93,8 @@ function AddProducts(props) {
                   required
                   onChange={handleChange}
                 />
-                <button type="submit">ADD</button>
+                <button type="submit" disabled>ADD</button>
+                <h6>Button disabled, for viewing only</h6>
               </form>
             </div>
           </div>
